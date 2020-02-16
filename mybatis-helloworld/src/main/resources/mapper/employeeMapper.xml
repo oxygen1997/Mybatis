@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zy.mybatis.mapper.EmployeeMapper">
+    <!--
+        namespace:命名空间(对应的mapper接口)
+        id：唯一标识 （对应的接口方法）
+        resultType:返回值类型
+    -->
+    <!--原生代写法-->
+    <select id="selectOne" resultType="com.zy.mybatis.pojo.Employee">
+        select * from tbl_employee where id = #{id};
+    </select>
+
+    <!--接口式编程：面向接口的sql，接口的实现-->
+    <select id="getById" resultType="com.zy.mybatis.pojo.Employee">
+        select * from tbl_employee where id = #{id};
+    </select>
+</mapper>
