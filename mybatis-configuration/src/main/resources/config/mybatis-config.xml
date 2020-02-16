@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <!--    resources 从类路径下引入配置文件
+        url 从网络或者磁盘引入资源配置文件
+-->
+    <properties resource="dbconfig.properties"></properties>
+    <settings>
+        <setting name="cacheEnabled" value="true"/>
+        <!--懒加载-->
+        <setting name="lazyLoadingEnabled" value="true"/>
+        <setting name="defaultStatementTimeout" value="25"/>
+        <setting name="defaultFetchSize" value="100"/>
+        <!--开启驼峰命名-->
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+    </settings>
+
+<!--    typeHandler（类型处理器） 将实体数据类型和数据库中类型一一对应起来，如String和VarChar
+            可以通过实现实现 org.apache.ibatis.type.TypeHandler 接口或者继承org.apache.ibatis.type.BaseTypeHandler，
+            然后可以选择性地将它映射到一个 JDBC 类型
+            // ExampleTypeHandler.java
+            @MappedJdbcTypes(JdbcType.VARCHAR)
+            public class ExampleTypeHandler extends BaseTypeHandler<String> {
+
+              @Override
+              public void setNonNullParameter(PreparedStatement ps, int i, String parameter, JdbcType jdbcType) throws SQLException {
+                ps.setString(i, parameter);
+              }
+
+              @Override
+              public String getNullableResult(ResultSet rs, String columnName) throws SQLException {
+                return rs.getString(columnName);
+              }
+
+              @Override
+              public String getNullableResult(ResultSet rs, int columnIndex) throws SQLException {
+                return rs.getString(columnIndex);
+              }
+
+              @Override
+              public String getNullableResult(CallableStatement cs, int columnIndex) throws SQLException {
+                return cs.getString(columnIndex);
+              }
+            }
+    mybatis-config.xml
+    <typeHandlers>
+        <typeHandler handler="org.mybatis.example.ExampleTypeHandler"/>
+    </typeHandlers>
+-->
+
+    <typeAliases>
+        <!--为单独的类起别名-->
+<!--        <typeAlias type="com.zy.mybatis.pojo.Employee"></typeAlias>-->
+        <!--批量起别名，为包下的所有后代类都以类名起别名，不区分大小写，默认小写。如果实体类有子包冲突，那么可以使用注解@Alias("别名")-->
+        <package name="com.zy.mybatis.pojo"/>
+    </typeAliases>
+
+<!--    mybatis可以配置多种环境，default属性中填写要使用的环境，id代表当前环境的唯一标识。
+        在Mybatis的类中，configuration(org.apache.ibatis.session.Configuration)类会注册别名jdbc和managed,
+        transactionManager:事务管理器
+                JDBC – 这个配置就是直接使用了 JDBC 的提交和回滚设置，它依赖于从数据源得到的连接来管理事务作用域。
+                MANAGED – 这个配置几乎没做什么。它从来不提交或回滚一个连接，而是让容器来管理事务的整个生命周期（比如 JEE 应用服务器的上下文）。 默认情况下它会关闭连接，然而一些容器并不希望这样，因此需要将 closeConnection 属性设置为 false 来阻止它默认的关闭行为。例如:
+                <transactionManager type="MANAGED">
+                  <property name="closeConnection" value="false"/>
+                </transactionManager>
+                type：事务的类型； （jdbc|managed）
+                自定义事务管理器：实现TransactionFactory接口，type指定为全类名
+        dataSource:数据源 UNPOOLED（不使用连接池，每次操作都是一个新的连接，UnpooledDataSourceFactory）
+                          POOLED（使用连接池，PooledDataSourceFactory）
+                          JNDI（JndiDataSourceFactory）
+                   自定义数据源：实现DataSourceFactory接口，type指定为数据源全类名。
+-->
+    <environments default="dev_mysql">
+        <!--测试环境-->
+        <environment id="test">
+            <transactionManager type="JDBC"></transactionManager>
+            <dataSource type="POOLED">
+                <property name="driver" value="${jdbc.driver}"/>
+                <property name="url" value="${jdbc.url}"/>
+                <property name="username" value="${jdbc.username}"/>
+                <property name="password" value="${jdbc.password}"/>
+            </dataSource>
+        </environment>
+        <!--开发环境 使用Mybatis连接池-->
+        <!--<environment id="development">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <property name="driver" value="${db.driver}"/>
+                <property name="url" value="${db.url}"/>
+                <property name="username" value="${db.username}"/>
+                <property name="password" value="${db.password}"/>
+            </dataSource>
+        </environment>-->
+        <!--开发环境,使用第三方连接池-->
+        <!--<environment id="development">
+            <transactionManager type="JDBC"/>
+            <dataSource type="com.zy.mybatis.pooled.DruidDataSourceFactory">
+&lt;!&ndash;    <property name="driver" value="${db.driver}"/>&ndash;&gt;
+                <property name="url" value="${db.url}"/>
+                <property name="username" value="${db.username}"/>
+                <property name="password" value="${db.password}"/>
+                &lt;!&ndash; 配置初始化大小、最小、最大 &ndash;&gt;
+                <property name="initialSize" value="1" />
+                <property name="minIdle" value="1" />
+                <property name="maxActive" value="20" />
+                &lt;!&ndash; 配置获取连接等待超时的时间 &ndash;&gt;
+                <property name="maxWait" value="60000" />
+                &lt;!&ndash; 配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒 &ndash;&gt;
+                <property name="timeBetweenEvictionRunsMillis" value="60000" />
+                &lt;!&ndash; 配置一个连接在池中最小生存的时间，单位是毫秒 &ndash;&gt;
+                <property name="minEvictableIdleTimeMillis" value="300000" />
+                <property name="validationQuery" value="SELECT 'x'" />
+                <property name="testWhileIdle" value="true" />
+                <property name="testOnBorrow" value="false" />
+                <property name="testOnReturn" value="false" />
+                &lt;!&ndash; 配置监控统计拦截的filters，去掉后监控界面sql无法统计 &ndash;&gt;
+                <property name="filters" value="stat" />
+            </dataSource>
+        </environment>-->
+
+        <environment id="dev_mysql">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <property name="driver" value="${jdbc.driver}"/>
+                <property name="url" value="${jdbc.url}"/>
+                <property name="username" value="${jdbc.username}"/>
+                <property name="password" value="${jdbc.password}"/>
+            </dataSource>
+        </environment>
+        <environment id="dev_oracle">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <property name="driver" value="${orcl.driver}"/>
+                <property name="url" value="${orcl.url}"/>
+                <property name="username" value="${orcl.username}"/>
+                <property name="password" value="${orcl.password}"/>
+            </dataSource>
+        </environment>
+    </environments>
+    <!-- databaseIdProvider：支持多数据库厂商的；
+             type="DB_VENDOR"：VendorDatabaseIdProvider
+                 作用就是得到数据库厂商的标识(驱动getDatabaseProductName())，mybatis就能根据数据库厂商标识来执行不同的sql;
+                 MySQL，Oracle，SQL Server,xxxx
+          -->
+    <databaseIdProvider type="DB_VENDOR">
+        <!-- 为不同的数据库厂商起别名 -->
+        <property name="MySQL" value="mysql"/>
+        <property name="Oracle" value="oracle"/>
+        <property name="SQL Server" value="sqlserver"/>
+    </databaseIdProvider>
+
+    <mappers>
+        <!--
+            mapper:注册一个sql映射
+                注册配置文件
+                resource：引用类路径下的sql映射文件
+                    mybatis/mapper/EmployeeMapper.xml
+                url：引用网路路径或者磁盘路径下的sql映射文件
+                    file:///var/mappers/AuthorMapper.xml
+
+                注册接口
+                class：引用（注册）接口，
+                    1、有sql映射文件，映射文件名必须和接口同名，并且放在与接口同一目录下；
+                    2、没有sql映射文件，所有的sql都是利用注解写在接口上;
+                    推荐：
+                        比较重要的，复杂的Dao接口我们来写sql映射文件
+                        不重要，简单的Dao接口为了开发快速可以使用注解；
+        -->
+        <!-- <mapper resource="mybatis/mapper/EmployeeMapper.xml"/> -->
+        <!-- <mapper class="com.zy.mybatis.mapper.EmployeeMapperAnnotation"/> -->
+        <mapper resource="mapper/employeeMapper.xml"/>
+        <!-- 批量注册： -->
+<!--        <package name="com.zy.mybatis.mapper"/>-->
+    </mappers>
+</configuration>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zy.mybatis.mapper.EmployeeMapperPlus">
+    <!--
+        namespace:命名空间(对应的mapper接口)
+        id：唯一标识 （对应的接口方法）
+        resultType:返回值类型
+    -->
+<!--    resultMap 自定义封装返回结果集-->
+    <resultMap id="MyEmployee" type="com.zy.mybatis.pojo.Employee">
+        <id column="id" property="id" />
+        <result column="last_name" property="lastName" />
+        <result column="gender" property="gender"/>
+        <result column="email" property="email"/>
+    </resultMap>
+
+
+   <select id="getById" resultMap="MyEmployee">
+       select * from tbl_employee where id=#{id}
+   </select>
+
+<!--    级联查询 当一个JavaBean中包含另外一个JavaBean  另外一个JavaBean的属性使用 对象名.属性来定义结果（dept.deptName）-->
+    <resultMap id="EmpDept" type="com.zy.mybatis.pojo.Employee">
+        <result column="last_name" property="lastName"/>
+        <result column="gender" property="gender"/>
+        <result column="email" property="email"/>
+        <result column="dept_id" property="dept.id"/>
+        <result column="dept_name"  property="dept.deptName"/>
+    </resultMap>
+<!--    级联查询 -->
+    <select id="getByDeptId" resultMap="EmpDept">
+        select
+        e.id as id,
+        e.last_name as last_name,
+        e.gender as gender,
+        e.email as email,
+        d.id as dept_id,
+        d.dept_name as dept_name
+        from
+        tbl_employee e ,
+        tbl_dept d
+        where
+        e.dept_id=d.id
+        and e.id=#{id};
+    </select>
+
+<!-- ===================================== start 关联查询使用一对一association===================================== -->
+    <resultMap id="EmpDept2" type="com.zy.mybatis.pojo.Employee">
+        <result column="last_name" property="lastName"/>
+        <result column="gender" property="gender"/>
+        <result column="email" property="email"/>
+        <association property="dept" javaType="com.zy.mybatis.pojo.Dept">
+            <id column="d_id" property="id"/>
+            <result column="dept_name" property="deptName"/>
+        </association>
+<!--        <result column="dept_id" property="dept.id"/>-->
+<!--        <result column="dept_name"  property="dept.deptName"/>-->
+    </resultMap>
+    <select id="getByDeptId2" resultMap="EmpDept2">
+        select
+        e.id as id,
+        e.last_name as last_name,
+        e.gender as gender,
+        e.email as email,
+        d.id as d_id,
+        d.dept_name as dept_name
+        from
+        tbl_employee e ,
+        tbl_dept d
+        where
+        e.dept_id=d.id
+        and e.id=#{id};
+    </select>
+
+
+<!--    使用association分步查询
+        select中是调用查询的mapper方法对应的id
+        column是传入该查询方法的参数对应的当前表列名
+        并封装给property指定的属性
+-->
+    <resultMap id="EmpDeptByStep" type="com.zy.mybatis.pojo.Employee">
+        <result column="last_name" property="lastName"/>
+        <result column="gender" property="gender"/>
+        <result column="email" property="email"/>
+        <!--select是调用的Mapper查询文件中查询sql的id-->
+        <association property="dept"
+                     select="com.zy.mybatis.mapper.DeptMapper.getDeptById"
+                     column="dept_id"
+        />
+    </resultMap>
+    <select id="getByDeptStep" resultMap="EmpDeptByStep">
+        select
+        *
+        from
+        tbl_employee
+        where
+        id=#{id};
+    </select>
+
+                <!--懒加载 只加载需要的属性  节约查询时间，提高DB性能-->
+                <!-- <setting name="lazyLoadingEnabled" value="true"/>-->
+                <!--你需要对象结果集某个属性时，true为将该对象其他的属性也完全加载，否则只加载需要的这个属性值-->
+                <!--<setting name="aggressiveLazyLoading" value="false"/>-->
+
+<!-- ===================================== end 关联查询使用一对一association===================================== -->
+    
+
+<!--根据部门id查出员工表中所有在该部门员工信息-->
+    <select id="getByDeptList" resultType="employee">
+        select * from tbl_employee where dept_id=#{id};
+    </select>
+
+<!--    使用鉴别器（条件选择器） discriminator
+        男生不输出部门信息，女生输出部门信息
+-->
+    <resultMap id="EmpDeptByStepDis" type="com.zy.mybatis.pojo.Employee">
+        <id column="id" property="id"/>
+        <result column="last_name" property="lastName"/>
+        <result column="gender" property="gender"/>
+        <result column="email" property="email"/>
+        <!--select是调用的Mapper查询文件中查询sql的id-->
+        <discriminator javaType="String" column="gender">
+                    <!--0代表女-->
+            <case value="0" resultType="com.zy.mybatis.pojo.Employee">
+                <association property="dept"
+                             select="com.zy.mybatis.mapper.DeptMapper.getDeptById"
+                             column="dept_id"
+                />
+            </case>
+                    <!--1代表男-->
+            <case value="1" resultType="com.zy.mybatis.pojo.Employee">
+                <!--<id column="id" property="id"/>
+                <result column="last_name" property="lastName"/>
+                <result column="gender" property="gender"/>
+                <result column="email"  property="email"/>-->
+            </case>
+        </discriminator>
+
+    </resultMap>
+    <select id="getByDeptStepDis" resultMap="EmpDeptByStepDis">
+        select
+        *
+        from
+        tbl_employee
+        where
+        id=#{id};
+    </select>
+</mapper>

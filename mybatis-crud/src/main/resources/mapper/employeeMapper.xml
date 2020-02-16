@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zy.mybatis.mapper.EmployeeMapper">
+    <!--
+        namespace:命名空间(对应的mapper接口)
+        id：唯一标识 （对应的接口方法）
+        resultType:返回值类型
+    -->
+    <!--原生代写法-->
+    <select id="selectOne" resultType="employee">
+        select * from tbl_employee where id = #{id};
+    </select>
+
+    <!--接口式编程：面向接口的sql，接口的实现-->
+<!--    通过id获得一条数据  resultType可以写全类名路径或者类名（不区分大小写），typeAliases中设置别名-->
+    <select id="getByIdEmp" resultType="Employee">
+        select * from tbl_employee where id = #{id};
+    </select>
+<!--    获取全部数据-->
+    <select id="getAllEmp" resultType="employee">
+        select * from tbl_employee;
+    </select>
+<!--
+parameterType参数类型，可以省略
+mysql支持自增主键的获取，使用statement的getreatedKeys()方法。
+mybatis同理，在insert标签中使用userGenreatedKeys=true。（使用主键自增策略）默认是false
+使用keyProperty来封装得到的自增主键值，value为javaBean属性。
+插入操作后获得自增主键
+useGeneratedKeys="true" keyProperty="id"
+-->
+<!--    插入一条数据  插入完成之后获得自增主键  useGeneratedKeys="true" keyProperty="id"-->
+    <insert id="addEmp" parameterType="com.zy.mybatis.pojo.Employee" useGeneratedKeys="true" keyProperty="id" databaseId="mysql">
+        insert  into  tbl_employee(last_name,gender,email) values (#{lastName},#{gender},#{email});
+    </insert>
+<!--删除一条数据ById-->
+    <delete id="deleteEmp" parameterType="Integer">
+        delete from tbl_employee where id = #{id};
+    </delete>
+<!--更新一条数据ById-->
+    <update id="updateEmp" parameterType="com.zy.mybatis.pojo.Employee">
+        update  tbl_employee
+        set
+        last_name = #{lastName},
+        gender = #{gender},
+        email = #{email}
+        where id = #{id}
+    </update>
+<!--    通过id和LastName获取一条数据
+        当多个参数时，mybatis会按照mapper方法参数顺序，默认为
+        param1 ... paramN
+        key:paramN
+        value:paramN's Value
+        如果想使用指定参数名，可以在Mapper参数上加上注解@Param("Name")，如下
+        Employee getByIdAndLastName(@Param("id") Integer id, @Param("lastName")String lastName)，此时可以将sql中的param1...paramN替换为指定参数名;
+-->
+    <select id="getByIdAndLastName" resultType="Employee">
+        select
+        id,last_name,gender,email
+        from
+        tbl_employee
+        where id=#{id} and last_name=#{lastName}
+        <!--当没有为参数起自定义名称时规定从Param1...ParamN-->
+<!--        where id=#{param1} and last_name=#{param2} -->
+    </select>
+<!--    多个参数时使用JavaBean传递（当多个参数都存在于JavaBean属性当中），可以不自定义类型名直接使用-->
+    <select id="getByBean" resultType="Employee">
+        select
+        id,last_name,gender,email
+        from tbl_employee
+        where email=#{email} and gender=#{gender}
+    </select>
+<!--    多个参数时使用Map传递（当某个参数都存在于Map属性当中）,可以不自定义类型名直接使用-->
+    <select id="getByMap" resultType="Employee">
+        select
+        id,last_name,gender,email
+        from tbl_employee
+        where email=#{email} and last_name=#{lastName}
+    </select>
+
+<!--    模糊查询返回集合List-->
+    <select id="getByLikeName" resultType="employee">
+        select
+         *
+         from tbl_employee
+         where last_name
+         like
+        <!-- "%"#{lastName}"%"-->
+        concat('%',#{lastName,jdbcType=VARCHAR},'%');
+    </select>
+<!--返回map类型-->
+    <select id="getByIdMap" resultType="map">
+        select * from tbl_employee where id = #{id};
+    </select>
+    <!--返回map类型-->
+    <select id="getByLikeNameMap2" resultType="map">
+        select * from tbl_employee where last_name like "%"#{lastName}"%";
+    </select>
+
+</mapper>

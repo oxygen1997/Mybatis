@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zy.mybatis.mapper.DeptMapper">
+    <resultMap id="deptById" type="com.zy.mybatis.pojo.Dept">
+        <id column="id" property="id"/>
+        <result column="dept_name" property="deptName"/>
+    </resultMap>
+   <select id="getDeptById" resultMap="deptById">
+        select * from tbl_dept where id=#{id};
+   </select>
+
+    <resultMap id="deptListById" type="com.zy.mybatis.pojo.Dept">
+        <id column="did" property="id"/>
+        <result column="dept_name" property="deptName"/>
+        <collection property="employeeList" ofType="com.zy.mybatis.pojo.Employee">
+            <id column="eid" property="id"/>
+            <result column="last_name" property="lastName"/>
+            <result column="gender" property="gender"/>
+            <result column="email" property="email"/>
+        </collection>
+    </resultMap>
+    <select id="getByDeptList" resultMap="deptListById">
+        select
+		d.id as did,
+        d.dept_name as dept_name,
+        e.id as eid,
+        e.last_name as last_name,
+        e.gender as gender,
+        e.email as email
+        from
+        tbl_dept d
+        LEFT JOIN
+	    tbl_employee e
+        on
+		d.id = e.dept_id
+        where
+		d.id=#{id}
+    </select>
+
+<!--    一对多分布查询collection
+        根据员工部门id查出该部门下所有员工信息
+        column可以使用键值对map的形式传递多个参数（多列值），column="{调用的语句需要传递参数的表字段名=当前查询表字段名}"
+        column="{key1=column1,...keyN=columnN}"
+        fetchType="lazy" 局部开启懒加载，针对当前查询
+        fetchType="eager" 立即加载
+-->
+    <resultMap id="deptListByIdStep" type="com.zy.mybatis.pojo.Dept">
+        <id column="dept_id" property="id"/>
+        <result column="dept_name" property="deptName"/>
+        <collection property="employeeList"
+                    select="com.zy.mybatis.mapper.EmployeeMapperPlus.getByDeptList"
+                    column="{id=dept_id}" fetchType="lazy"/>
+    </resultMap>
+    <select id="getDeptByIdStep" resultMap="deptListByIdStep">
+        select id dept_id,dept_name dept_name from tbl_dept where id=#{id};
+    </select>
+</mapper>
