@@ -2,5 +2,6 @@
 mybatis-DynamicSQL.iml
 
 #folder
+log
 .idea
 target

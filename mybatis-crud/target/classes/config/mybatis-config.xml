@@ -37,7 +37,7 @@
 <!--            使用Mybatis自带连接池-->
 <!--            <dataSource type="POOLED">-->
 <!--            使用第三方数据源（druid）-->
-            <dataSource type="com.zy.mybatis.pooled.DruidDataSourceFactory">
+            <dataSource type="com.zy.mybatis.pool.DruidDataSourceFactory">
            <!-- <property name="driver" value="${jdbc.driver}"/>-->
                 <property name="url" value="${jdbc.url}"/>
                 <property name="username" value="${jdbc.username}"/>

@@ -8,6 +8,10 @@
 -->
     <properties resource="dbconfig.properties"></properties>
     <settings>
+<!--        开启二级缓存 value默认为true
+            MyBatis 的二级缓存是和命名空间绑定的，即二级缓存需要配置在Mapper.xml 映射文件中，
+            或者配置在Mapper的Java接口中。
+-->
         <setting name="cacheEnabled" value="true"/>
         <!-- lazyLoadingEnabled默认不设置为false
         版本更新默认值可能会变 所以需要显示指定value
@@ -30,9 +34,9 @@
     </typeAliases>
 
 
-    <environments default="development">
+    <environments default="dev_mysql">
         <!--开发环境,使用第三方连接池-->
-        <environment id="development">
+        <environment id="dev_mysql">
             <transactionManager type="JDBC"/>
 <!--            使用Mybatis自带连接池-->
 <!--            <dataSource type="POOLED">-->
@@ -42,6 +46,7 @@
                 <property name="url" value="${jdbc.url}"/>
                 <property name="username" value="${jdbc.username}"/>
                 <property name="password" value="${jdbc.password}"/>
+<!--                <property name="driver" value="${jdbc.driver}"/>-->
                 <!-- 配置初始化大小、最小、最大 -->
                 <property name="initialSize" value="1" />
                 <property name="minIdle" value="1" />

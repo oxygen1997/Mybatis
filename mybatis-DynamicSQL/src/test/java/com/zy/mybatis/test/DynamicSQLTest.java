@@ -1,6 +1,7 @@
 package com.zy.mybatis.test;
 
 import com.zy.mybatis.mapper.EmployeeDynamicMapper;
+import com.zy.mybatis.pojo.Dept;
 import com.zy.mybatis.pojo.Employee;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
@@ -10,6 +11,8 @@ import org.junit.Test;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class DynamicSQLTest {
@@ -103,4 +106,123 @@ public class DynamicSQLTest {
             sqlSession.close();
         }
     }
+    @Test
+    public void  getEmpByConditionChoose() throws IOException {
+        SqlSession sqlSession = getSqlSessionFactory().openSession();
+        try{
+            /**
+             * when单分支选择
+             * otherwise 其他情况选择
+             */
+            EmployeeDynamicMapper mapper = sqlSession.getMapper(EmployeeDynamicMapper.class);
+            Employee employee = new Employee();
+            employee.setId(null);
+            employee.setGender(null);
+//            employee.setLastName("D");
+            employee.setEmail(null);
+            List<Employee> empList = mapper.getEmpByConditionChoose(employee);
+            for (Employee e:empList) {
+                System.out.println(e);
+            }
+        }finally {
+            sqlSession.close();
+        }
+    }
+
+    @Test
+    public void  updateEmpByConditionSet() throws IOException {
+        SqlSession sqlSession = getSqlSessionFactory().openSession(true);
+        try{
+            /**
+             * set标签更新操作
+             */
+            EmployeeDynamicMapper mapper = sqlSession.getMapper(EmployeeDynamicMapper.class);
+            Employee employee = new Employee();
+            employee.setId(7);
+            employee.setGender("0");
+            employee.setLastName("吴彦祖");
+            employee.setEmail("wyz@cool.com");
+            mapper.updateEmpByConditionSet(employee);
+        }finally {
+            sqlSession.close();
+        }
+    }
+
+    //遍历传入的集合参数
+    @Test
+    public void getEmpByConditionForeach() throws IOException {
+        this.sqlSession = getSqlSessionFactory().openSession();
+        try{
+            EmployeeDynamicMapper mapper = sqlSession.getMapper(EmployeeDynamicMapper.class);
+            List<Employee> list = mapper.getEmpByConditionForeach(Arrays.asList(1, 2, 3));
+            for (Employee e:list) {
+                System.out.println(e);
+            }
+        }finally {
+            sqlSession.close();
+        }
+    }
+
+    /**
+     * 批量添加
+     * @throws IOException
+     */
+    @Test
+    public void addBatchEmpByConditionForeach() throws IOException {
+         sqlSession = getSqlSessionFactory().openSession();
+         try{
+             EmployeeDynamicMapper mapper = sqlSession.getMapper(EmployeeDynamicMapper.class);
+             List<Employee> list = new ArrayList<Employee>();
+             list.add(new Employee( "Jack", "1", "Jack@cool.com", new Dept(1)));
+             list.add(new Employee( "ChenGuanXi", "1", "Eadison@cool.com", new Dept(1)));
+             mapper.addEmpByConditionForeach(list);
+             sqlSession.commit();
+         }finally {
+             sqlSession.close();
+         }
+    }
+
+    /**
+     * 内置参数的使用
+     * @throws IOException
+     */
+    @Test
+    public void getEmpByInnerParameter() throws IOException {
+        sqlSession = getSqlSessionFactory().openSession();
+        try{
+            EmployeeDynamicMapper mapper = sqlSession.getMapper(EmployeeDynamicMapper.class);
+            List<Employee> list = mapper.getEmpByInnerParameter(new Employee( "mr chen", null, null, null));
+            System.out.println(list);
+        }finally {
+            sqlSession.close();
+        }
+    }
+    /**
+     * bind标签
+     */
+    @Test
+    public void getEmpByIdBind() throws IOException {
+        sqlSession = getSqlSessionFactory().openSession();
+        try{
+            EmployeeDynamicMapper mapper = sqlSession.getMapper(EmployeeDynamicMapper.class);
+            List<Employee> employee = mapper.getEmpByIdBind(new Employee("e", null, null, null));
+            for (Employee e:employee) {
+                System.out.println(e);
+            }
+        }finally {
+            sqlSession.close();
+        }
+    }
+
+    @Test
+   public void getById() throws IOException {
+        sqlSession = getSqlSessionFactory().openSession();
+        try{
+            EmployeeDynamicMapper mapper = sqlSession.getMapper(EmployeeDynamicMapper.class);
+            Employee e = mapper.getById(2);
+            System.out.println(e);
+        }finally {
+            sqlSession.close();
+        }
+   }
 }

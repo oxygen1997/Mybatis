@@ -129,7 +129,7 @@ public class MybatisTest {
 
     //多个参数封装入JavaBean条件查询
     @Test
-    public void getByIBean() throws IOException {
+    public void getByBean() throws IOException {
         SqlSession sqlSession = getSqlSessionFactory().openSession(true);
         try{
             EmployeeMapper employeeMapper = sqlSession.getMapper(EmployeeMapper.class);

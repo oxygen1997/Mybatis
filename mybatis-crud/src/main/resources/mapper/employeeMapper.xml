@@ -48,6 +48,7 @@ useGeneratedKeys="true" keyProperty="id"
         where id = #{id}
     </update>
 <!--    通过id和LastName获取一条数据
+        当只有一个参数时也需要按照此规则
         当多个参数时，mybatis会按照mapper方法参数顺序，默认为
         param1 ... paramN
         key:paramN

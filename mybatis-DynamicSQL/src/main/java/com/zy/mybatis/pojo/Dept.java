@@ -8,6 +8,24 @@ public class Dept {
     private List<Employee> employeeList;
 
 
+    public Dept() {
+    }
+
+    public Dept(Integer id) {
+        this.id = id;
+    }
+
+    public Dept(String deptName, List<Employee> employeeList) {
+        this.deptName = deptName;
+        this.employeeList = employeeList;
+    }
+
+    public Dept(Integer id, String deptName, List<Employee> employeeList) {
+        this.id = id;
+        this.deptName = deptName;
+        this.employeeList = employeeList;
+    }
+
     @Override
     public String toString() {
         return "Dept{" +
@@ -23,8 +41,6 @@ public class Dept {
     public void setEmployeeList(List<Employee> list) {
         this.employeeList = list;
     }
-
-
 
     public Integer getId() {
         return id;

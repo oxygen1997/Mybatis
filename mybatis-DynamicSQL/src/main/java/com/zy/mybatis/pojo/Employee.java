@@ -10,6 +10,15 @@ public class Employee {
     //设置外键关联tbl_dept.id <-------> tbl_employee.dept_id时，外键的属性和长度都要一致
     private Dept dept;
 
+    public Employee() {
+    }
+
+    public Employee( String lastName, String gender, String email, Dept dept) {
+        this.lastName = lastName;
+        this.gender = gender;
+        this.email = email;
+        this.dept = dept;
+    }
 
     public Integer getId() {
         return id;
