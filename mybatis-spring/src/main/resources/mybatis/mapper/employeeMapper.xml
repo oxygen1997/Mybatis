@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.zy.mybatis.mapper.EmployeeMapper">
+
+    <resultMap id="emp" type="com.zy.mybatis.bean.Employee">
+        <id column="id" property="id"/>
+        <result column="last_name" property="lastName"/>
+        <result column="gender" property="gender"/>
+        <result column="email" property="email"/>
+    </resultMap>
+
+<!--更新数据，使用set标签-->
+    <update id="update">
+        update tbl_employee
+        <set>
+            <if test="id!=null">
+                id=#{id},
+            </if>
+            <!-- 使用转义字符代替特殊符号& -> &amp; 和 ; -> &quot;-->
+            <if test="lastName!=null">
+                last_name=#{lastName},
+            </if>
+            <!--动态SQL会对字符串与数字进行转换判断-->
+            <if test="gender!=null">
+                gender=#{gender},
+            </if>
+            <if test="email!=null">
+                email=#{email}
+            </if>
+        </set>
+        <where>
+            id=#{id}
+        </where>
+
+    </update>
+
+<!--    插入数据， 批量插入 allowMultiQueries=true-->
+    <insert id="add" parameterType="com.zy.mybatis.bean.Employee">
+        <foreach collection="param1" item="emp" separator=";">
+            insert  into
+            tbl_employee(last_name,gender,email,dept_id)
+            values
+            (#{emp.lastName},#{emp.gender},#{emp.email},#{emp.dept.id})
+        </foreach>
+    </insert>
+
+<!--    通过id查询数据-->
+    <sql id="selectByIdColumn">
+        last_name,gender,email
+    </sql>
+    <select id="getById" resultType="com.zy.mybatis.bean.Employee">
+        select
+        <include refid="selectByIdColumn">
+            <!--自定义属性在SQL中使用-->
+            <!--        <property name="testColumn" value="abc"/>-->
+        </include>
+        from tbl_employee
+        where
+        id=#{id}
+    </select>
+<!--    通过性别查询数据-->
+    <select id="getByGenderList" resultMap="emp">
+        select * from tbl_emplyee
+        where gender=#{gender}
+    </select>
+
+<!--    查询所有数据-->
+    <select id="getAllEmployee" resultType="com.zy.mybatis.bean.Employee">
+        select * from tbl_employee;
+    </select>
+</mapper>
