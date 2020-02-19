@@ -183,7 +183,7 @@ public class DynamicSQLTest {
     }
 
     /**
-     * 内置参数的使用
+     * 内置参数_parameter和_databaseId的使用
      * @throws IOException
      */
     @Test
@@ -199,6 +199,7 @@ public class DynamicSQLTest {
     }
     /**
      * bind标签
+     * 自定义变量，在sql中调用
      */
     @Test
     public void getEmpByIdBind() throws IOException {
@@ -214,6 +215,10 @@ public class DynamicSQLTest {
         }
     }
 
+    /**
+     * 测试<sql><include>标签
+     * @throws IOException
+     */
     @Test
    public void getById() throws IOException {
         sqlSession = getSqlSessionFactory().openSession();
@@ -225,4 +230,86 @@ public class DynamicSQLTest {
             sqlSession.close();
         }
    }
+    /**
+     * 一级缓存和二级缓存
+     * 一级缓存(SqlSession级别缓存[本地缓存])：默认开启，无法关闭
+     *           级别在sqlSession会话中生效
+     *           失效情况：
+     *              1.不同的sqlSession
+     *              2.两次查询之间执行了增删改操作
+     *              3.清除本地缓存后
+     */
+    @Test
+    public void getByIdFirstLevelCache() throws Exception{
+        SqlSession sqlSession1 =null;
+        SqlSession sqlSession2 =null;
+        try{
+            sqlSession1 = getSqlSessionFactory().openSession();
+            EmployeeDynamicMapper mapper = sqlSession1.getMapper(EmployeeDynamicMapper.class);
+            Employee employee1 = mapper.getById(1);
+            sqlSession1.close();
+            //1.sqlSession不同
+            sqlSession2 = getSqlSessionFactory().openSession();
+            EmployeeDynamicMapper mapper2 = sqlSession2.getMapper(EmployeeDynamicMapper.class);
+            Employee employee2 = mapper2.getById(1);
+            //false
+            System.out.println(employee1==employee2);
+            //2.两次查询之间执行了增删改操作
+            /*ArrayList<Employee> employeeList = new ArrayList<Employee>();
+            employeeList.add(new Employee("金城武", "1", "jcw@bangzi.com", new Dept(1)));
+            mapper.addEmpByConditionForeach(employeeList);
+            Employee employee3 = mapper.getById(1);
+            //false
+            System.out.println(employee1==employee3);*/
+            //3.手动清除本地一级缓存
+            sqlSession1.clearCache();
+            Employee employee4 = mapper.getById(1);
+            //false
+            System.out.println(employee1==employee4);
+        }finally {
+//            sqlSession1.close();
+            sqlSession2.close();
+        }
+    }
+
+    /**
+     * 二级缓存：(全局缓存)：基于namespace级别的缓存
+     * 开启二级缓存： 对应的JavaBean同时需要实现序列化接口
+     *              <setting name="cacheEnabled" value="true"/>-----》》》mybatis-config.xml
+     *              <cache  eviction="FIFO" flushInterval="60000" size="512" readOnly="true"/>-------》》》
+     * @throws Exception
+     */
+    @Test
+    public void getByIdSecondLevelCache() throws Exception{
+        SqlSession sqlSession1 =null;
+        SqlSession sqlSession2 =null;
+        try{
+            sqlSession1 = getSqlSessionFactory().openSession();
+            EmployeeDynamicMapper mapper = sqlSession1.getMapper(EmployeeDynamicMapper.class);
+            Employee employee1 = mapper.getById(1);
+            System.out.println(employee1);
+            sqlSession1.close();
+            //1.sqlSession不同，当前一个SqlSession关闭时，前一个SqlSession的一级缓存会被添加到namespace空间中，
+            // 另外一个SqlSession开启二级缓存后即可使用
+            sqlSession2 = getSqlSessionFactory().openSession();
+            EmployeeDynamicMapper mapper2 = sqlSession2.getMapper(EmployeeDynamicMapper.class);
+            Employee employee2 = mapper2.getById(1);
+            System.out.println(employee2);
+            //false
+            System.out.println(employee1==employee2);
+        }finally {
+            sqlSession2.close();
+        }
+    }
+    /**
+     * 缓存相关设置
+     *              1.开启全局二级缓存  <setting name="cacheEnabled" value="true"/> 关闭二级缓存，一级缓存可用
+     *              2.select标签useCache="true"；false：不使用缓存（一级可用，二级不可用）
+     *              3.insert/update/delete 标签 flushCache标签=true，一级二级都会清除，在增删改执行完成后执行清除缓存操作
+     *                select标签flushCache=false，每次查询后都会清空一级缓存，缓存未被使用
+     *              4.sqlSession.clearCache()：清除当前session的一级本地缓存
+     *              5.localCacheScope：本地缓存作用域
+     *                                  session：当前会话的所有数据保存在会话缓存中
+     *                                  statement：当前会话没有缓存共享，关闭一级缓存。
+     */
 }

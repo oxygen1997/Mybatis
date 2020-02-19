@@ -1,30 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d3dea45c-75f1-4dff-88f3-38bbba510c60" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../mybatis-DynamicSQL/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mybatis-configuration/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mybatis-DynamicSQL/.ignore" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis-DynamicSQL/.ignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mybatis-DynamicSQL/log/curd.log" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis-DynamicSQL/log/curd.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mybatis-DynamicSQL/src/main/java/com/zy/mybatis/mapper/EmployeeDynamicMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis-DynamicSQL/src/main/java/com/zy/mybatis/mapper/EmployeeDynamicMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mybatis-DynamicSQL/src/main/java/com/zy/mybatis/pojo/Dept.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis-DynamicSQL/src/main/java/com/zy/mybatis/pojo/Dept.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mybatis-DynamicSQL/src/main/java/com/zy/mybatis/pojo/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis-DynamicSQL/src/main/java/com/zy/mybatis/pojo/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mybatis-DynamicSQL/src/main/resources/config/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis-DynamicSQL/src/main/resources/config/mybatis-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mybatis-DynamicSQL/src/main/resources/dbconfig.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis-DynamicSQL/src/main/resources/dbconfig.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mybatis-DynamicSQL/src/main/resources/mapper/employeeDynamicMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis-DynamicSQL/src/main/resources/mapper/employeeDynamicMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mybatis-DynamicSQL/src/test/java/com/zy/mybatis/test/DynamicSQLTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis-DynamicSQL/src/test/java/com/zy/mybatis/test/DynamicSQLTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mybatis-configuration/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis-configuration/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mybatis-configuration/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis-configuration/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mybatis-configuration/src/main/resources/mapper/employeeMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis-configuration/src/main/resources/mapper/employeeMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/curd.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/curd.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/employeeMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/employeeMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/zy/mybatis/test/MybatisTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/zy/mybatis/test/MybatisTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zy/mybatis/pooled/DruidDataSourceFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/config/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/config/mybatis-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/META-INF/mybatis-crud.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zy/mybatis/test/MybatisTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/zy/mybatis/test/MybatisTest.class" afterDir="false" />
-    </list>
+    <list default="true" id="d3dea45c-75f1-4dff-88f3-38bbba510c60" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -212,7 +189,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="85" />
     <option name="y" value="25" />
     <option name="width" value="1750" />
@@ -518,7 +495,7 @@
     <option name="totallyTimeSpent" value="45843000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />

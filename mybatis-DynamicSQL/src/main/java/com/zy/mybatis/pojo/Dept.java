@@ -1,8 +1,10 @@
 package com.zy.mybatis.pojo;
 
+import java.io.Serializable;
 import java.util.List;
 
-public class Dept {
+public class Dept implements Serializable {
+
     Integer id;
     String deptName;
     private List<Employee> employeeList;

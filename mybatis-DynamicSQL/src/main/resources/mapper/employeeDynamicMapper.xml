@@ -15,7 +15,8 @@
         size （引用数目） 。可以被设置为任意正整数，要记住缓存的对象数目和运行环境的可
                         用内存资源数目。默认值是1024 。
         readOnly （只读）。属性可以被设置为true 或false 。只读的缓存会给所有调用者
-                        返回缓存对象的相同实例，因此这些对象不能被修改
+                           true：不安全，直接返回  false：会序列化对象产生一份克隆拷贝基于使用，安全，速度慢
+                           返回缓存对象的相同实例，因此这些对象不能被修改
 -->
     <cache  eviction="FIFO" flushInterval="60000" size="512" readOnly="true"/>
 
@@ -197,7 +198,7 @@
         </if>-->
     </select>
 
-<!--    bind标签的使用-->
+<!--    bind标签的使用 自定义变量，在sql中调用-->
     <select id="getEmpByIdBind" resultType="employee">
     <bind name="_lastName" value="'%'+lastName+'%'"/>
         select * from tbl_employee

@@ -1,0 +1,9 @@
+ * 缓存相关设置
+ *              1.开启全局二级缓存  <setting name="cacheEnabled" value="true"/> 关闭二级缓存，一级缓存可用
+ *              2.select标签useCache="true"；false：不使用缓存（一级可用，二级不可用）
+ *              3.insert/update/delete 标签 flushCache标签=true，一级二级都会清除，在增删改执行完成后执行清除缓存操作
+ *                select标签flushCache=false，每次查询后都会清空一级缓存，缓存未被使用
+ *              4.sqlSession.clearCache()：清除当前session的一级本地缓存
+ *              5.localCacheScope：本地缓存作用域
+ *                                  session：当前会话的所有数据保存在会话缓存中
+ *                                  statement：当前会话没有缓存共享，关闭一级缓存。
