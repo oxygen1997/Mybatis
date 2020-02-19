@@ -1,4 +1,4 @@
- * 缓存相关设置
+ *          缓存相关设置
  *              1.开启全局二级缓存  <setting name="cacheEnabled" value="true"/> 关闭二级缓存，一级缓存可用
  *              2.select标签useCache="true"；false：不使用缓存（一级可用，二级不可用）
  *              3.insert/update/delete 标签 flushCache标签=true，一级二级都会清除，在增删改执行完成后执行清除缓存操作
