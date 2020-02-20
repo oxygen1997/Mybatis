@@ -1,0 +1,20 @@
+org.mybatis.generator.logging.LogFactory Logging initialized using 'org.mybatis.generator.logging.log4j.Log4jLoggingLogFactory@a7e666' adapter.105 
+org.mybatis.generator.internal.db.DatabaseIntrospector Retrieving column information for table "tbl_dept"501 
+org.mybatis.generator.internal.db.DatabaseIntrospector Found column "id", data type 4, in table "mybatis..tbl_dept"559 
+org.mybatis.generator.internal.db.DatabaseIntrospector Found column "dept_name", data type 12, in table "mybatis..tbl_dept"559 
+org.mybatis.generator.internal.db.DatabaseIntrospector Retrieving column information for table "tbl_employee"501 
+org.mybatis.generator.internal.db.DatabaseIntrospector Found column "id", data type 4, in table "mybatis..tbl_employee"559 
+org.mybatis.generator.internal.db.DatabaseIntrospector Found column "last_name", data type 12, in table "mybatis..tbl_employee"559 
+org.mybatis.generator.internal.db.DatabaseIntrospector Found column "gender", data type 4, in table "mybatis..tbl_employee"559 
+org.mybatis.generator.internal.db.DatabaseIntrospector Found column "email", data type 12, in table "mybatis..tbl_employee"559 
+org.mybatis.generator.internal.db.DatabaseIntrospector Found column "dept_id", data type 4, in table "mybatis..tbl_employee"559 
+org.mybatis.generator.logging.LogFactory Logging initialized using 'org.mybatis.generator.logging.log4j.Log4jLoggingLogFactory@a7e666' adapter.105 
+org.mybatis.generator.internal.db.DatabaseIntrospector Retrieving column information for table "tbl_dept"501 
+org.mybatis.generator.internal.db.DatabaseIntrospector Found column "id", data type 4, in table "mybatis..tbl_dept"559 
+org.mybatis.generator.internal.db.DatabaseIntrospector Found column "dept_name", data type 12, in table "mybatis..tbl_dept"559 
+org.mybatis.generator.internal.db.DatabaseIntrospector Retrieving column information for table "tbl_employee"501 
+org.mybatis.generator.internal.db.DatabaseIntrospector Found column "id", data type 4, in table "mybatis..tbl_employee"559 
+org.mybatis.generator.internal.db.DatabaseIntrospector Found column "last_name", data type 12, in table "mybatis..tbl_employee"559 
+org.mybatis.generator.internal.db.DatabaseIntrospector Found column "gender", data type 4, in table "mybatis..tbl_employee"559 
+org.mybatis.generator.internal.db.DatabaseIntrospector Found column "email", data type 12, in table "mybatis..tbl_employee"559 
+org.mybatis.generator.internal.db.DatabaseIntrospector Found column "dept_id", data type 4, in table "mybatis..tbl_employee"559 

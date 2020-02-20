@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <!--    resources 从类路径下引入配置文件
+        url 从网络或者磁盘引入资源配置文件
+-->
+    <properties resource="dbconfig.properties"></properties>
+    <settings>
+        <!--        开启二级缓存 value默认为true
+                    MyBatis 的二级缓存是和命名空间绑定的，即二级缓存需要配置在Mapper.xml 映射文件中，
+                    或者配置在Mapper的Java接口中。
+        -->
+        <setting name="cacheEnabled" value="true"/>
+        <!-- lazyLoadingEnabled默认不设置为false
+        版本更新默认值可能会变 所以需要显示指定value
+        aggressiveLazyLoading默认值false （在 3.4.1 及之前的版本默认值为 true）
+        -->
+        <!--懒加载 只加载需要的属性-->
+        <setting name="lazyLoadingEnabled" value="true"/>
+        <!--你需要对象结果集某个属性时，true为将该对象其他的属性也完全加载，否则只加载需要的这个属性值-->
+        <setting name="aggressiveLazyLoading" value="false"/>
+        <setting name="defaultStatementTimeout" value="25"/>
+        <!--开启驼峰命名-->
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+    </settings>
+
+    <typeAliases>
+        <!--为单独的类起别名，在映射文件中可以直接使用类名作为type，不区分大小写-->
+        <!--<typeAlias type="com.zy.Employee"></typeAlias>-->
+        <!--批量起别名，为包下的所有后代类都以类名起别名，不区分大小写，默认小写。如果实体类有子包冲突，那么可以使用注解@Alias("别名")-->
+        <package name="com.zy.mybatis.bean"/>
+    </typeAliases>
+
+
+    <environments default="dev_mysql">
+        <!--开发环境,使用第三方连接池-->
+        <environment id="dev_mysql">
+            <transactionManager type="JDBC"/>
+            <!--            使用Mybatis自带连接池-->
+            <!--            <dataSource type="POOLED">-->
+            <!--            使用第三方数据源（druid）-->
+            <dataSource type="pooled">
+                 <property name="driver" value="${jdbc.driver}"/>
+                <property name="url" value="${jdbc.url}"/>
+                <property name="username" value="${jdbc.username}"/>
+                <property name="password" value="${jdbc.password}"/>
+                <!--                <property name="driver" value="${jdbc.driver}"/>-->
+                <!-- 配置初始化大小、最小、最大 -->
+                <property name="initialSize" value="1" />
+                <property name="minIdle" value="1" />
+                <property name="maxActive" value="20" />
+                <!-- 配置获取连接等待超时的时间 -->
+                <property name="maxWait" value="60000" />
+                <!-- 配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒 -->
+                <property name="timeBetweenEvictionRunsMillis" value="60000" />
+                <!-- 配置一个连接在池中最小生存的时间，单位是毫秒 -->
+                <property name="minEvictableIdleTimeMillis" value="300000" />
+                <property name="validationQuery" value="SELECT 'x'" />
+                <property name="testWhileIdle" value="true" />
+                <property name="testOnBorrow" value="false" />
+                <property name="testOnReturn" value="false" />
+                <!-- 配置监控统计拦截的filters，去掉后监控界面sql无法统计 -->
+                <property name="filters" value="stat" />
+            </dataSource>
+        </environment>
+
+    </environments>
+    <!-- databaseIdProvider：支持多数据库厂商的；
+             type="DB_VENDOR"：VendorDatabaseIdProvider
+                 作用就是得到数据库厂商的标识(驱动getDatabaseProductName())，mybatis就能根据数据库厂商标识来执行不同的sql;
+                 MySQL，Oracle，SQL Server,xxxx
+    -->
+    <databaseIdProvider type="DB_VENDOR">
+        <!-- 为不同的数据库厂商起别名 -->
+        <property name="MySQL" value="mysql"/>
+        <property name="Oracle" value="oracle"/>
+        <property name="SQL Server" value="sqlserver"/>
+    </databaseIdProvider>
+
+    <mappers>
+        <!-- 批量注册： -->
+        <!-- <package name="com.zy.mybatis.mapper"/>-->
+    </mappers>
+</configuration>
