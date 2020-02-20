@@ -58,7 +58,7 @@
      -->
     <mybatis-spring:scan base-package="com.zy.mybatis.mapper"/>
     <!-- <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-        <property name="basePackage" value="com.atguigu.mybatis.dao"></property>
+        <property name="basePackage" value="com.zy.mybatis.mapper"></property>
     </bean> -->
 
 </beans>
