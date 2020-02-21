@@ -35,34 +35,16 @@
 
 
     <environments default="dev_mysql">
-        <!--开发环境,使用第三方连接池-->
+        <!--开发环境,使用Mybatis连接池-->
         <environment id="dev_mysql">
             <transactionManager type="JDBC"/>
-            <!--            使用Mybatis自带连接池-->
-            <!--            <dataSource type="POOLED">-->
-            <!--            使用第三方数据源（druid）-->
-            <dataSource type="pooled">
-                 <property name="driver" value="${jdbc.driver}"/>
+            <!--使用Mybatis自带连接池-->
+            <!--<dataSource type="POOLED">-->
+            <dataSource type="POOLED">
+                <property name="driver" value="${jdbc.driver}"/>
                 <property name="url" value="${jdbc.url}"/>
                 <property name="username" value="${jdbc.username}"/>
                 <property name="password" value="${jdbc.password}"/>
-                <!--                <property name="driver" value="${jdbc.driver}"/>-->
-                <!-- 配置初始化大小、最小、最大 -->
-                <property name="initialSize" value="1" />
-                <property name="minIdle" value="1" />
-                <property name="maxActive" value="20" />
-                <!-- 配置获取连接等待超时的时间 -->
-                <property name="maxWait" value="60000" />
-                <!-- 配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒 -->
-                <property name="timeBetweenEvictionRunsMillis" value="60000" />
-                <!-- 配置一个连接在池中最小生存的时间，单位是毫秒 -->
-                <property name="minEvictableIdleTimeMillis" value="300000" />
-                <property name="validationQuery" value="SELECT 'x'" />
-                <property name="testWhileIdle" value="true" />
-                <property name="testOnBorrow" value="false" />
-                <property name="testOnReturn" value="false" />
-                <!-- 配置监控统计拦截的filters，去掉后监控界面sql无法统计 -->
-                <property name="filters" value="stat" />
             </dataSource>
         </environment>
 
@@ -80,7 +62,8 @@
     </databaseIdProvider>
 
     <mappers>
+        <mapper resource="mapper/EmployeeMapper.xml" />
         <!-- 批量注册： -->
-        <!-- <package name="com.zy.mybatis.mapper"/>-->
+<!--         <package  name="com.zy.mybatis.dao"/>-->
     </mappers>
 </configuration>
