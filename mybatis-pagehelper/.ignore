@@ -1,0 +1,7 @@
+#Folder
+log
+.idea
+target
+
+#File
+mybatis-pagehelper.iml

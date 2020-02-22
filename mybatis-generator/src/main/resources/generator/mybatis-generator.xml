@@ -8,7 +8,7 @@
         targetRuntime="MyBatis3Simple":生成简单版的CRUD
         MyBatis3:豪华版
      -->
-    <properties resource="dbconfig.properties"/>
+    <properties resource="dbConfig.properties"/>
     <context id="DB2Tables" targetRuntime="MyBatis3">
         <commentGenerator>
             <!--是否删除生成的所有注释  true：是  false：否-->
@@ -48,7 +48,7 @@
         </sqlMapGenerator>
 
         <!-- javaClientGenerator:指定mapper接口所在的位置 -->
-        <javaClientGenerator type="XMLMAPPER" targetPackage="com.zy.mybatis.dao"
+        <javaClientGenerator type="xmlMapper" targetPackage="com.zy.mybatis.dao"
                              targetProject="src\main\java">
             <property name="enableSubPackages" value="true" />
         </javaClientGenerator>
