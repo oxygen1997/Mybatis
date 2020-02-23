@@ -1,0 +1,748 @@
+org.apache.ibatis.logging.LogFactory Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.105 
+org.apache.ibatis.io.VFS Class not found: org.jboss.vfs.VFS108 
+org.apache.ibatis.io.JBoss6VFS JBoss 6 VFS API is not available in this environment.142 
+org.apache.ibatis.io.VFS Class not found: org.jboss.vfs.VirtualFile108 
+org.apache.ibatis.io.VFS$VFSHolder VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.63 
+org.apache.ibatis.io.VFS$VFSHolder Using VFS adapter org.apache.ibatis.io.DefaultVFS74 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource Created connection 22805895.424 
+org.apache.ibatis.datasource.pooled.PooledDataSource Returned connection 22805895 to pool.381 
+org.apache.ibatis.logging.LogFactory Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.105 
+org.apache.ibatis.io.VFS Class not found: org.jboss.vfs.VFS108 
+org.apache.ibatis.io.JBoss6VFS JBoss 6 VFS API is not available in this environment.142 
+org.apache.ibatis.io.VFS Class not found: org.jboss.vfs.VirtualFile108 
+org.apache.ibatis.io.VFS$VFSHolder VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.63 
+org.apache.ibatis.io.VFS$VFSHolder Using VFS adapter org.apache.ibatis.io.DefaultVFS74 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource Created connection 22805895.424 
+org.apache.ibatis.datasource.pooled.PooledDataSource Returned connection 22805895 to pool.381 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Opening JDBC Connection136 
+org.apache.ibatis.datasource.pooled.PooledDataSource Checked out connection 22805895 from pool.416 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@15bfd87]100 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger ==>  Preparing: select id, last_name, gender, email, dept_id from tbl_employee 143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger ==> Parameters: 143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger <==      Total: 13143 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@15bfd87]122 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@15bfd87]90 
+org.apache.ibatis.datasource.pooled.PooledDataSource Returned connection 22805895 to pool.381 
+org.apache.ibatis.logging.LogFactory Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.105 
+org.apache.ibatis.io.VFS Class not found: org.jboss.vfs.VFS108 
+org.apache.ibatis.io.JBoss6VFS JBoss 6 VFS API is not available in this environment.142 
+org.apache.ibatis.io.VFS Class not found: org.jboss.vfs.VirtualFile108 
+org.apache.ibatis.io.VFS$VFSHolder VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.63 
+org.apache.ibatis.io.VFS$VFSHolder Using VFS adapter org.apache.ibatis.io.DefaultVFS74 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource Created connection 22805895.424 
+org.apache.ibatis.datasource.pooled.PooledDataSource Returned connection 22805895 to pool.381 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Opening JDBC Connection136 
+org.apache.ibatis.datasource.pooled.PooledDataSource Checked out connection 22805895 from pool.416 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@15bfd87]100 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger ==>  Preparing: select id, last_name, gender, email, dept_id from tbl_employee 143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger ==> Parameters: 143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger <==      Total: 13143 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@15bfd87]122 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@15bfd87]90 
+org.apache.ibatis.datasource.pooled.PooledDataSource Returned connection 22805895 to pool.381 
+org.apache.ibatis.logging.LogFactory Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.105 
+org.apache.ibatis.io.VFS Class not found: org.jboss.vfs.VFS108 
+org.apache.ibatis.io.JBoss6VFS JBoss 6 VFS API is not available in this environment.142 
+org.apache.ibatis.io.VFS Class not found: org.jboss.vfs.VirtualFile108 
+org.apache.ibatis.io.VFS$VFSHolder VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.63 
+org.apache.ibatis.io.VFS$VFSHolder Using VFS adapter org.apache.ibatis.io.DefaultVFS74 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource Created connection 22805895.424 
+org.apache.ibatis.datasource.pooled.PooledDataSource Returned connection 22805895 to pool.381 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Opening JDBC Connection136 
+org.apache.ibatis.datasource.pooled.PooledDataSource Checked out connection 22805895 from pool.416 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@15bfd87]100 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger ==>  Preparing: select id, last_name, gender, email, dept_id from tbl_employee 143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger ==> Parameters: 143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger <==      Total: 13143 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@15bfd87]122 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@15bfd87]90 
+org.apache.ibatis.datasource.pooled.PooledDataSource Returned connection 22805895 to pool.381 
+org.apache.ibatis.logging.LogFactory Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.105 
+org.apache.ibatis.io.VFS Class not found: org.jboss.vfs.VFS108 
+org.apache.ibatis.io.JBoss6VFS JBoss 6 VFS API is not available in this environment.142 
+org.apache.ibatis.io.VFS Class not found: org.jboss.vfs.VirtualFile108 
+org.apache.ibatis.io.VFS$VFSHolder VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.63 
+org.apache.ibatis.io.VFS$VFSHolder Using VFS adapter org.apache.ibatis.io.DefaultVFS74 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource Created connection 1660794022.424 
+org.apache.ibatis.datasource.pooled.PooledDataSource Returned connection 1660794022 to pool.381 
+org.apache.ibatis.datasource.pooled.PooledDataSource Checked out connection 1660794022 from pool.416 
+org.apache.ibatis.datasource.pooled.PooledDataSource Returned connection 1660794022 to pool.381 
+org.apache.ibatis.cache.decorators.LoggingCache Cache Hit Ratio [SQL_CACHE]: 0.060 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Opening JDBC Connection136 
+org.apache.ibatis.datasource.pooled.PooledDataSource Checked out connection 1660794022 from pool.416 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@62fdb4a6]100 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger ==>  Preparing: SELECT count(0) FROM tbl_employee 143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger ==> Parameters: 143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger <==      Total: 1143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger ==>  Preparing: select id, last_name, gender, email, dept_id from tbl_employee LIMIT ? 143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger ==> Parameters: 4(Integer)143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger <==      Total: 4143 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@62fdb4a6]122 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@62fdb4a6]90 
+org.apache.ibatis.datasource.pooled.PooledDataSource Returned connection 1660794022 to pool.381 
+org.apache.ibatis.logging.LogFactory Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.105 
+org.apache.ibatis.io.VFS Class not found: org.jboss.vfs.VFS108 
+org.apache.ibatis.io.JBoss6VFS JBoss 6 VFS API is not available in this environment.142 
+org.apache.ibatis.io.VFS Class not found: org.jboss.vfs.VirtualFile108 
+org.apache.ibatis.io.VFS$VFSHolder VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.63 
+org.apache.ibatis.io.VFS$VFSHolder Using VFS adapter org.apache.ibatis.io.DefaultVFS74 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource Created connection 1660794022.424 
+org.apache.ibatis.datasource.pooled.PooledDataSource Returned connection 1660794022 to pool.381 
+org.apache.ibatis.datasource.pooled.PooledDataSource Checked out connection 1660794022 from pool.416 
+org.apache.ibatis.datasource.pooled.PooledDataSource Returned connection 1660794022 to pool.381 
+org.apache.ibatis.cache.decorators.LoggingCache Cache Hit Ratio [SQL_CACHE]: 0.060 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Opening JDBC Connection136 
+org.apache.ibatis.datasource.pooled.PooledDataSource Checked out connection 1660794022 from pool.416 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@62fdb4a6]100 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger ==>  Preparing: SELECT count(0) FROM tbl_employee 143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger ==> Parameters: 143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger <==      Total: 1143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger ==>  Preparing: select id, last_name, gender, email, dept_id from tbl_employee LIMIT ?, ? 143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger ==> Parameters: 8(Integer), 4(Integer)143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger <==      Total: 4143 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@62fdb4a6]122 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@62fdb4a6]90 
+org.apache.ibatis.datasource.pooled.PooledDataSource Returned connection 1660794022 to pool.381 
+org.apache.ibatis.logging.LogFactory Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.105 
+org.apache.ibatis.io.VFS Class not found: org.jboss.vfs.VFS108 
+org.apache.ibatis.io.JBoss6VFS JBoss 6 VFS API is not available in this environment.142 
+org.apache.ibatis.io.VFS Class not found: org.jboss.vfs.VirtualFile108 
+org.apache.ibatis.io.VFS$VFSHolder VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.63 
+org.apache.ibatis.io.VFS$VFSHolder Using VFS adapter org.apache.ibatis.io.DefaultVFS74 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource Created connection 1660794022.424 
+org.apache.ibatis.datasource.pooled.PooledDataSource Returned connection 1660794022 to pool.381 
+org.apache.ibatis.datasource.pooled.PooledDataSource Checked out connection 1660794022 from pool.416 
+org.apache.ibatis.datasource.pooled.PooledDataSource Returned connection 1660794022 to pool.381 
+org.apache.ibatis.cache.decorators.LoggingCache Cache Hit Ratio [SQL_CACHE]: 0.060 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Opening JDBC Connection136 
+org.apache.ibatis.datasource.pooled.PooledDataSource Checked out connection 1660794022 from pool.416 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@62fdb4a6]100 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger ==>  Preparing: SELECT count(0) FROM tbl_employee 143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger ==> Parameters: 143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger <==      Total: 1143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger ==>  Preparing: select id, last_name, gender, email, dept_id from tbl_employee LIMIT ?, ? 143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger ==> Parameters: 12(Integer), 4(Integer)143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger <==      Total: 1143 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@62fdb4a6]122 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@62fdb4a6]90 
+org.apache.ibatis.datasource.pooled.PooledDataSource Returned connection 1660794022 to pool.381 
+org.apache.ibatis.logging.LogFactory Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.105 
+org.apache.ibatis.io.VFS Class not found: org.jboss.vfs.VFS108 
+org.apache.ibatis.io.JBoss6VFS JBoss 6 VFS API is not available in this environment.142 
+org.apache.ibatis.io.VFS Class not found: org.jboss.vfs.VirtualFile108 
+org.apache.ibatis.io.VFS$VFSHolder VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.63 
+org.apache.ibatis.io.VFS$VFSHolder Using VFS adapter org.apache.ibatis.io.DefaultVFS74 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource Created connection 1660794022.424 
+org.apache.ibatis.datasource.pooled.PooledDataSource Returned connection 1660794022 to pool.381 
+org.apache.ibatis.datasource.pooled.PooledDataSource Checked out connection 1660794022 from pool.416 
+org.apache.ibatis.datasource.pooled.PooledDataSource Returned connection 1660794022 to pool.381 
+org.apache.ibatis.cache.decorators.LoggingCache Cache Hit Ratio [SQL_CACHE]: 0.060 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Opening JDBC Connection136 
+org.apache.ibatis.datasource.pooled.PooledDataSource Checked out connection 1660794022 from pool.416 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@62fdb4a6]100 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger ==>  Preparing: SELECT count(0) FROM tbl_employee 143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger ==> Parameters: 143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger <==      Total: 1143 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@62fdb4a6]122 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@62fdb4a6]90 
+org.apache.ibatis.datasource.pooled.PooledDataSource Returned connection 1660794022 to pool.381 
+org.apache.ibatis.logging.LogFactory Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.105 
+org.apache.ibatis.io.VFS Class not found: org.jboss.vfs.VFS108 
+org.apache.ibatis.io.JBoss6VFS JBoss 6 VFS API is not available in this environment.142 
+org.apache.ibatis.io.VFS Class not found: org.jboss.vfs.VirtualFile108 
+org.apache.ibatis.io.VFS$VFSHolder VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.63 
+org.apache.ibatis.io.VFS$VFSHolder Using VFS adapter org.apache.ibatis.io.DefaultVFS74 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource Created connection 756185697.424 
+org.apache.ibatis.datasource.pooled.PooledDataSource Returned connection 756185697 to pool.381 
+org.apache.ibatis.datasource.pooled.PooledDataSource Checked out connection 756185697 from pool.416 
+org.apache.ibatis.datasource.pooled.PooledDataSource Returned connection 756185697 to pool.381 
+org.apache.ibatis.cache.decorators.LoggingCache Cache Hit Ratio [SQL_CACHE]: 0.060 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Opening JDBC Connection136 
+org.apache.ibatis.datasource.pooled.PooledDataSource Checked out connection 756185697 from pool.416 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@2d127a61]100 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger ==>  Preparing: SELECT count(0) FROM tbl_employee 143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger ==> Parameters: 143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger <==      Total: 1143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger ==>  Preparing: select id, last_name, gender, email, dept_id from tbl_employee LIMIT ?, ? 143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger ==> Parameters: 4(Integer), 4(Integer)143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger <==      Total: 4143 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@2d127a61]122 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@2d127a61]90 
+org.apache.ibatis.datasource.pooled.PooledDataSource Returned connection 756185697 to pool.381 
+org.apache.ibatis.logging.LogFactory Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.105 
+org.apache.ibatis.io.VFS Class not found: org.jboss.vfs.VFS108 
+org.apache.ibatis.io.JBoss6VFS JBoss 6 VFS API is not available in this environment.142 
+org.apache.ibatis.io.VFS Class not found: org.jboss.vfs.VirtualFile108 
+org.apache.ibatis.io.VFS$VFSHolder VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.63 
+org.apache.ibatis.io.VFS$VFSHolder Using VFS adapter org.apache.ibatis.io.DefaultVFS74 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource Created connection 756185697.424 
+org.apache.ibatis.datasource.pooled.PooledDataSource Returned connection 756185697 to pool.381 
+org.apache.ibatis.datasource.pooled.PooledDataSource Checked out connection 756185697 from pool.416 
+org.apache.ibatis.datasource.pooled.PooledDataSource Returned connection 756185697 to pool.381 
+org.apache.ibatis.cache.decorators.LoggingCache Cache Hit Ratio [SQL_CACHE]: 0.060 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Opening JDBC Connection136 
+org.apache.ibatis.datasource.pooled.PooledDataSource Checked out connection 756185697 from pool.416 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@2d127a61]100 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger ==>  Preparing: SELECT count(0) FROM tbl_employee 143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger ==> Parameters: 143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger <==      Total: 1143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger ==>  Preparing: select id, last_name, gender, email, dept_id from tbl_employee LIMIT ?, ? 143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger ==> Parameters: 5(Integer), 5(Integer)143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger <==      Total: 5143 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@2d127a61]122 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@2d127a61]90 
+org.apache.ibatis.datasource.pooled.PooledDataSource Returned connection 756185697 to pool.381 
+org.apache.ibatis.logging.LogFactory Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.105 
+org.apache.ibatis.io.VFS Class not found: org.jboss.vfs.VFS108 
+org.apache.ibatis.io.JBoss6VFS JBoss 6 VFS API is not available in this environment.142 
+org.apache.ibatis.io.VFS Class not found: org.jboss.vfs.VirtualFile108 
+org.apache.ibatis.io.VFS$VFSHolder VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.63 
+org.apache.ibatis.io.VFS$VFSHolder Using VFS adapter org.apache.ibatis.io.DefaultVFS74 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource Created connection 756185697.424 
+org.apache.ibatis.datasource.pooled.PooledDataSource Returned connection 756185697 to pool.381 
+org.apache.ibatis.datasource.pooled.PooledDataSource Checked out connection 756185697 from pool.416 
+org.apache.ibatis.datasource.pooled.PooledDataSource Returned connection 756185697 to pool.381 
+org.apache.ibatis.cache.decorators.LoggingCache Cache Hit Ratio [SQL_CACHE]: 0.060 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Opening JDBC Connection136 
+org.apache.ibatis.datasource.pooled.PooledDataSource Checked out connection 756185697 from pool.416 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@2d127a61]100 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger ==>  Preparing: SELECT count(0) FROM tbl_employee 143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger ==> Parameters: 143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger <==      Total: 1143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger ==>  Preparing: select id, last_name, gender, email, dept_id from tbl_employee LIMIT ?, ? 143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger ==> Parameters: 5(Integer), 5(Integer)143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger <==      Total: 5143 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@2d127a61]122 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@2d127a61]90 
+org.apache.ibatis.datasource.pooled.PooledDataSource Returned connection 756185697 to pool.381 
+org.apache.ibatis.logging.LogFactory Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.105 
+org.apache.ibatis.io.VFS Class not found: org.jboss.vfs.VFS108 
+org.apache.ibatis.io.JBoss6VFS JBoss 6 VFS API is not available in this environment.142 
+org.apache.ibatis.io.VFS Class not found: org.jboss.vfs.VirtualFile108 
+org.apache.ibatis.io.VFS$VFSHolder VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.63 
+org.apache.ibatis.io.VFS$VFSHolder Using VFS adapter org.apache.ibatis.io.DefaultVFS74 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource Created connection 756185697.424 
+org.apache.ibatis.datasource.pooled.PooledDataSource Returned connection 756185697 to pool.381 
+org.apache.ibatis.datasource.pooled.PooledDataSource Checked out connection 756185697 from pool.416 
+org.apache.ibatis.datasource.pooled.PooledDataSource Returned connection 756185697 to pool.381 
+org.apache.ibatis.cache.decorators.LoggingCache Cache Hit Ratio [SQL_CACHE]: 0.060 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Opening JDBC Connection136 
+org.apache.ibatis.datasource.pooled.PooledDataSource Checked out connection 756185697 from pool.416 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@2d127a61]100 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger ==>  Preparing: SELECT count(0) FROM tbl_employee 143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger ==> Parameters: 143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger <==      Total: 1143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger ==>  Preparing: select id, last_name, gender, email, dept_id from tbl_employee LIMIT ?, ? 143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger ==> Parameters: 5(Integer), 5(Integer)143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger <==      Total: 5143 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@2d127a61]122 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@2d127a61]90 
+org.apache.ibatis.datasource.pooled.PooledDataSource Returned connection 756185697 to pool.381 
+org.apache.ibatis.logging.LogFactory Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.105 
+org.apache.ibatis.io.VFS Class not found: org.jboss.vfs.VFS108 
+org.apache.ibatis.io.JBoss6VFS JBoss 6 VFS API is not available in this environment.142 
+org.apache.ibatis.io.VFS Class not found: org.jboss.vfs.VirtualFile108 
+org.apache.ibatis.io.VFS$VFSHolder VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.63 
+org.apache.ibatis.io.VFS$VFSHolder Using VFS adapter org.apache.ibatis.io.DefaultVFS74 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource Created connection 1237598030.424 
+org.apache.ibatis.datasource.pooled.PooledDataSource Returned connection 1237598030 to pool.381 
+org.apache.ibatis.datasource.pooled.PooledDataSource Checked out connection 1237598030 from pool.416 
+org.apache.ibatis.datasource.pooled.PooledDataSource Returned connection 1237598030 to pool.381 
+org.apache.ibatis.cache.decorators.LoggingCache Cache Hit Ratio [SQL_CACHE]: 0.060 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Opening JDBC Connection136 
+org.apache.ibatis.datasource.pooled.PooledDataSource Checked out connection 1237598030 from pool.416 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@49c43f4e]100 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger ==>  Preparing: SELECT count(0) FROM tbl_employee 143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger ==> Parameters: 143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger <==      Total: 1143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger ==>  Preparing: select id, last_name, gender, email, dept_id from tbl_employee LIMIT ?, ? 143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger ==> Parameters: 5(Integer), 5(Integer)143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger <==      Total: 5143 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@49c43f4e]122 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@49c43f4e]90 
+org.apache.ibatis.datasource.pooled.PooledDataSource Returned connection 1237598030 to pool.381 
+org.apache.ibatis.logging.LogFactory Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.105 
+org.apache.ibatis.io.VFS Class not found: org.jboss.vfs.VFS108 
+org.apache.ibatis.io.JBoss6VFS JBoss 6 VFS API is not available in this environment.142 
+org.apache.ibatis.io.VFS Class not found: org.jboss.vfs.VirtualFile108 
+org.apache.ibatis.io.VFS$VFSHolder VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.63 
+org.apache.ibatis.io.VFS$VFSHolder Using VFS adapter org.apache.ibatis.io.DefaultVFS74 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource Created connection 1237598030.424 
+org.apache.ibatis.datasource.pooled.PooledDataSource Returned connection 1237598030 to pool.381 
+org.apache.ibatis.datasource.pooled.PooledDataSource Checked out connection 1237598030 from pool.416 
+org.apache.ibatis.datasource.pooled.PooledDataSource Returned connection 1237598030 to pool.381 
+org.apache.ibatis.cache.decorators.LoggingCache Cache Hit Ratio [SQL_CACHE]: 0.060 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Opening JDBC Connection136 
+org.apache.ibatis.datasource.pooled.PooledDataSource Checked out connection 1237598030 from pool.416 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@49c43f4e]100 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger ==>  Preparing: SELECT count(0) FROM tbl_employee 143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger ==> Parameters: 143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger <==      Total: 1143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger ==>  Preparing: select id, last_name, gender, email, dept_id from tbl_employee LIMIT ?, ? 143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger ==> Parameters: 2(Integer), 5(Integer)143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger <==      Total: 5143 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@49c43f4e]122 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@49c43f4e]90 
+org.apache.ibatis.datasource.pooled.PooledDataSource Returned connection 1237598030 to pool.381 
+org.apache.ibatis.logging.LogFactory Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.105 
+org.apache.ibatis.io.VFS Class not found: org.jboss.vfs.VFS108 
+org.apache.ibatis.io.JBoss6VFS JBoss 6 VFS API is not available in this environment.142 
+org.apache.ibatis.io.VFS Class not found: org.jboss.vfs.VirtualFile108 
+org.apache.ibatis.io.VFS$VFSHolder VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.63 
+org.apache.ibatis.io.VFS$VFSHolder Using VFS adapter org.apache.ibatis.io.DefaultVFS74 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource Created connection 1237598030.424 
+org.apache.ibatis.datasource.pooled.PooledDataSource Returned connection 1237598030 to pool.381 
+org.apache.ibatis.datasource.pooled.PooledDataSource Checked out connection 1237598030 from pool.416 
+org.apache.ibatis.datasource.pooled.PooledDataSource Returned connection 1237598030 to pool.381 
+org.apache.ibatis.cache.decorators.LoggingCache Cache Hit Ratio [SQL_CACHE]: 0.060 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Opening JDBC Connection136 
+org.apache.ibatis.datasource.pooled.PooledDataSource Checked out connection 1237598030 from pool.416 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@49c43f4e]100 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger ==>  Preparing: SELECT count(0) FROM tbl_employee 143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger ==> Parameters: 143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger <==      Total: 1143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger ==>  Preparing: select id, last_name, gender, email, dept_id from tbl_employee LIMIT ?, ? 143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger ==> Parameters: 4(Integer), 5(Integer)143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger <==      Total: 5143 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@49c43f4e]122 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@49c43f4e]90 
+org.apache.ibatis.datasource.pooled.PooledDataSource Returned connection 1237598030 to pool.381 
+org.apache.ibatis.logging.LogFactory Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.105 
+org.apache.ibatis.io.VFS Class not found: org.jboss.vfs.VFS108 
+org.apache.ibatis.io.JBoss6VFS JBoss 6 VFS API is not available in this environment.142 
+org.apache.ibatis.io.VFS Class not found: org.jboss.vfs.VirtualFile108 
+org.apache.ibatis.io.VFS$VFSHolder VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.63 
+org.apache.ibatis.io.VFS$VFSHolder Using VFS adapter org.apache.ibatis.io.DefaultVFS74 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource Created connection 1237598030.424 
+org.apache.ibatis.datasource.pooled.PooledDataSource Returned connection 1237598030 to pool.381 
+org.apache.ibatis.datasource.pooled.PooledDataSource Checked out connection 1237598030 from pool.416 
+org.apache.ibatis.datasource.pooled.PooledDataSource Returned connection 1237598030 to pool.381 
+org.apache.ibatis.cache.decorators.LoggingCache Cache Hit Ratio [SQL_CACHE]: 0.060 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Opening JDBC Connection136 
+org.apache.ibatis.datasource.pooled.PooledDataSource Checked out connection 1237598030 from pool.416 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@49c43f4e]100 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger ==>  Preparing: SELECT count(0) FROM tbl_employee 143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger ==> Parameters: 143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger <==      Total: 1143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger ==>  Preparing: select id, last_name, gender, email, dept_id from tbl_employee LIMIT ? 143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger ==> Parameters: 5(Integer)143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger <==      Total: 5143 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@49c43f4e]122 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@49c43f4e]90 
+org.apache.ibatis.datasource.pooled.PooledDataSource Returned connection 1237598030 to pool.381 
+org.apache.ibatis.logging.LogFactory Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.105 
+org.apache.ibatis.io.VFS Class not found: org.jboss.vfs.VFS108 
+org.apache.ibatis.io.JBoss6VFS JBoss 6 VFS API is not available in this environment.142 
+org.apache.ibatis.io.VFS Class not found: org.jboss.vfs.VirtualFile108 
+org.apache.ibatis.io.VFS$VFSHolder VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.63 
+org.apache.ibatis.io.VFS$VFSHolder Using VFS adapter org.apache.ibatis.io.DefaultVFS74 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource Created connection 1237598030.424 
+org.apache.ibatis.datasource.pooled.PooledDataSource Returned connection 1237598030 to pool.381 
+org.apache.ibatis.datasource.pooled.PooledDataSource Checked out connection 1237598030 from pool.416 
+org.apache.ibatis.datasource.pooled.PooledDataSource Returned connection 1237598030 to pool.381 
+org.apache.ibatis.cache.decorators.LoggingCache Cache Hit Ratio [SQL_CACHE]: 0.060 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Opening JDBC Connection136 
+org.apache.ibatis.datasource.pooled.PooledDataSource Checked out connection 1237598030 from pool.416 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@49c43f4e]100 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger ==>  Preparing: SELECT count(0) FROM tbl_employee 143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger ==> Parameters: 143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger <==      Total: 1143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger ==>  Preparing: select id, last_name, gender, email, dept_id from tbl_employee LIMIT ?, ? 143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger ==> Parameters: 1(Integer), 5(Integer)143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger <==      Total: 5143 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@49c43f4e]122 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@49c43f4e]90 
+org.apache.ibatis.datasource.pooled.PooledDataSource Returned connection 1237598030 to pool.381 
+org.apache.ibatis.logging.LogFactory Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.105 
+org.apache.ibatis.io.VFS Class not found: org.jboss.vfs.VFS108 
+org.apache.ibatis.io.JBoss6VFS JBoss 6 VFS API is not available in this environment.142 
+org.apache.ibatis.io.VFS Class not found: org.jboss.vfs.VirtualFile108 
+org.apache.ibatis.io.VFS$VFSHolder VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.63 
+org.apache.ibatis.io.VFS$VFSHolder Using VFS adapter org.apache.ibatis.io.DefaultVFS74 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource Created connection 1237598030.424 
+org.apache.ibatis.datasource.pooled.PooledDataSource Returned connection 1237598030 to pool.381 
+org.apache.ibatis.logging.LogFactory Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.105 
+org.apache.ibatis.io.VFS Class not found: org.jboss.vfs.VFS108 
+org.apache.ibatis.io.JBoss6VFS JBoss 6 VFS API is not available in this environment.142 
+org.apache.ibatis.io.VFS Class not found: org.jboss.vfs.VirtualFile108 
+org.apache.ibatis.io.VFS$VFSHolder VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.63 
+org.apache.ibatis.io.VFS$VFSHolder Using VFS adapter org.apache.ibatis.io.DefaultVFS74 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource Created connection 1237598030.424 
+org.apache.ibatis.datasource.pooled.PooledDataSource Returned connection 1237598030 to pool.381 
+org.apache.ibatis.datasource.pooled.PooledDataSource Checked out connection 1237598030 from pool.416 
+org.apache.ibatis.datasource.pooled.PooledDataSource Returned connection 1237598030 to pool.381 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Opening JDBC Connection136 
+org.apache.ibatis.datasource.pooled.PooledDataSource Checked out connection 1237598030 from pool.416 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@49c43f4e]100 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger ==>  Preparing: select id, last_name, gender, email, dept_id from tbl_employee LIMIT ?, ? 143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger ==> Parameters: 1(Integer), 5(Integer)143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger <==      Total: 5143 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@49c43f4e]122 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@49c43f4e]90 
+org.apache.ibatis.datasource.pooled.PooledDataSource Returned connection 1237598030 to pool.381 
+org.apache.ibatis.logging.LogFactory Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.105 
+org.apache.ibatis.io.VFS Class not found: org.jboss.vfs.VFS108 
+org.apache.ibatis.io.JBoss6VFS JBoss 6 VFS API is not available in this environment.142 
+org.apache.ibatis.io.VFS Class not found: org.jboss.vfs.VirtualFile108 
+org.apache.ibatis.io.VFS$VFSHolder VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.63 
+org.apache.ibatis.io.VFS$VFSHolder Using VFS adapter org.apache.ibatis.io.DefaultVFS74 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource Created connection 1237598030.424 
+org.apache.ibatis.datasource.pooled.PooledDataSource Returned connection 1237598030 to pool.381 
+org.apache.ibatis.datasource.pooled.PooledDataSource Checked out connection 1237598030 from pool.416 
+org.apache.ibatis.datasource.pooled.PooledDataSource Returned connection 1237598030 to pool.381 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Opening JDBC Connection136 
+org.apache.ibatis.datasource.pooled.PooledDataSource Checked out connection 1237598030 from pool.416 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@49c43f4e]100 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger ==>  Preparing: select id, last_name, gender, email, dept_id from tbl_employee LIMIT ?, ? 143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger ==> Parameters: 5(Integer), 5(Integer)143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger <==      Total: 5143 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@49c43f4e]122 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@49c43f4e]90 
+org.apache.ibatis.datasource.pooled.PooledDataSource Returned connection 1237598030 to pool.381 
+org.apache.ibatis.logging.LogFactory Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.105 
+org.apache.ibatis.io.VFS Class not found: org.jboss.vfs.VFS108 
+org.apache.ibatis.io.JBoss6VFS JBoss 6 VFS API is not available in this environment.142 
+org.apache.ibatis.io.VFS Class not found: org.jboss.vfs.VirtualFile108 
+org.apache.ibatis.io.VFS$VFSHolder VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.63 
+org.apache.ibatis.io.VFS$VFSHolder Using VFS adapter org.apache.ibatis.io.DefaultVFS74 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource Created connection 1237598030.424 
+org.apache.ibatis.datasource.pooled.PooledDataSource Returned connection 1237598030 to pool.381 
+org.apache.ibatis.logging.LogFactory Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.105 
+org.apache.ibatis.io.VFS Class not found: org.jboss.vfs.VFS108 
+org.apache.ibatis.io.JBoss6VFS JBoss 6 VFS API is not available in this environment.142 
+org.apache.ibatis.io.VFS Class not found: org.jboss.vfs.VirtualFile108 
+org.apache.ibatis.io.VFS$VFSHolder VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.63 
+org.apache.ibatis.io.VFS$VFSHolder Using VFS adapter org.apache.ibatis.io.DefaultVFS74 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource Created connection 1237598030.424 
+org.apache.ibatis.datasource.pooled.PooledDataSource Returned connection 1237598030 to pool.381 
+org.apache.ibatis.datasource.pooled.PooledDataSource Checked out connection 1237598030 from pool.416 
+org.apache.ibatis.datasource.pooled.PooledDataSource Returned connection 1237598030 to pool.381 
+org.apache.ibatis.cache.decorators.LoggingCache Cache Hit Ratio [SQL_CACHE]: 0.060 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Opening JDBC Connection136 
+org.apache.ibatis.datasource.pooled.PooledDataSource Checked out connection 1237598030 from pool.416 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@49c43f4e]100 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger ==>  Preparing: SELECT count(0) FROM tbl_employee WHERE (last_name LIKE ?) 143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger ==> Parameters: %C%(String)143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger <==      Total: 1143 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@49c43f4e]122 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@49c43f4e]90 
+org.apache.ibatis.datasource.pooled.PooledDataSource Returned connection 1237598030 to pool.381 
+org.apache.ibatis.logging.LogFactory Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.105 
+org.apache.ibatis.io.VFS Class not found: org.jboss.vfs.VFS108 
+org.apache.ibatis.io.JBoss6VFS JBoss 6 VFS API is not available in this environment.142 
+org.apache.ibatis.io.VFS Class not found: org.jboss.vfs.VirtualFile108 
+org.apache.ibatis.io.VFS$VFSHolder VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.63 
+org.apache.ibatis.io.VFS$VFSHolder Using VFS adapter org.apache.ibatis.io.DefaultVFS74 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource Created connection 1237598030.424 
+org.apache.ibatis.datasource.pooled.PooledDataSource Returned connection 1237598030 to pool.381 
+org.apache.ibatis.datasource.pooled.PooledDataSource Checked out connection 1237598030 from pool.416 
+org.apache.ibatis.datasource.pooled.PooledDataSource Returned connection 1237598030 to pool.381 
+org.apache.ibatis.cache.decorators.LoggingCache Cache Hit Ratio [SQL_CACHE]: 0.060 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Opening JDBC Connection136 
+org.apache.ibatis.datasource.pooled.PooledDataSource Checked out connection 1237598030 from pool.416 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@49c43f4e]100 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger ==>  Preparing: SELECT count(0) FROM tbl_employee WHERE (last_name LIKE ?) 143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger ==> Parameters: %C%(String)143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger <==      Total: 1143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger ==>  Preparing: select id, last_name, gender, email, dept_id from tbl_employee WHERE ( last_name like ? ) LIMIT ? 143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger ==> Parameters: %C%(String), 5(Integer)143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger <==      Total: 5143 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@49c43f4e]122 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@49c43f4e]90 
+org.apache.ibatis.datasource.pooled.PooledDataSource Returned connection 1237598030 to pool.381 
+org.apache.ibatis.logging.LogFactory Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.105 
+org.apache.ibatis.io.VFS Class not found: org.jboss.vfs.VFS108 
+org.apache.ibatis.io.JBoss6VFS JBoss 6 VFS API is not available in this environment.142 
+org.apache.ibatis.io.VFS Class not found: org.jboss.vfs.VirtualFile108 
+org.apache.ibatis.io.VFS$VFSHolder VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.63 
+org.apache.ibatis.io.VFS$VFSHolder Using VFS adapter org.apache.ibatis.io.DefaultVFS74 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource Created connection 1237598030.424 
+org.apache.ibatis.datasource.pooled.PooledDataSource Returned connection 1237598030 to pool.381 
+org.apache.ibatis.datasource.pooled.PooledDataSource Checked out connection 1237598030 from pool.416 
+org.apache.ibatis.datasource.pooled.PooledDataSource Returned connection 1237598030 to pool.381 
+org.apache.ibatis.cache.decorators.LoggingCache Cache Hit Ratio [SQL_CACHE]: 0.060 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Opening JDBC Connection136 
+org.apache.ibatis.datasource.pooled.PooledDataSource Checked out connection 1237598030 from pool.416 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@49c43f4e]100 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger ==>  Preparing: SELECT count(0) FROM tbl_employee WHERE (last_name LIKE ?) 143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger ==> Parameters: %C%(String)143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger <==      Total: 1143 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@49c43f4e]122 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@49c43f4e]90 
+org.apache.ibatis.datasource.pooled.PooledDataSource Returned connection 1237598030 to pool.381 
+org.apache.ibatis.logging.LogFactory Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.105 
+org.apache.ibatis.io.VFS Class not found: org.jboss.vfs.VFS108 
+org.apache.ibatis.io.JBoss6VFS JBoss 6 VFS API is not available in this environment.142 
+org.apache.ibatis.io.VFS Class not found: org.jboss.vfs.VirtualFile108 
+org.apache.ibatis.io.VFS$VFSHolder VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.63 
+org.apache.ibatis.io.VFS$VFSHolder Using VFS adapter org.apache.ibatis.io.DefaultVFS74 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource Created connection 1237598030.424 
+org.apache.ibatis.datasource.pooled.PooledDataSource Returned connection 1237598030 to pool.381 
+org.apache.ibatis.datasource.pooled.PooledDataSource Checked out connection 1237598030 from pool.416 
+org.apache.ibatis.datasource.pooled.PooledDataSource Returned connection 1237598030 to pool.381 
+org.apache.ibatis.cache.decorators.LoggingCache Cache Hit Ratio [SQL_CACHE]: 0.060 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Opening JDBC Connection136 
+org.apache.ibatis.datasource.pooled.PooledDataSource Checked out connection 1237598030 from pool.416 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@49c43f4e]100 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger ==>  Preparing: SELECT count(0) FROM tbl_employee WHERE (last_name LIKE ?) 143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger ==> Parameters: %C%(String)143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger <==      Total: 1143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger ==>  Preparing: select id, last_name, gender, email, dept_id from tbl_employee WHERE ( last_name like ? ) LIMIT ? 143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger ==> Parameters: %C%(String), 5(Integer)143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger <==      Total: 5143 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@49c43f4e]122 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@49c43f4e]90 
+org.apache.ibatis.datasource.pooled.PooledDataSource Returned connection 1237598030 to pool.381 
+org.apache.ibatis.logging.LogFactory Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.105 
+org.apache.ibatis.io.VFS Class not found: org.jboss.vfs.VFS108 
+org.apache.ibatis.io.JBoss6VFS JBoss 6 VFS API is not available in this environment.142 
+org.apache.ibatis.io.VFS Class not found: org.jboss.vfs.VirtualFile108 
+org.apache.ibatis.io.VFS$VFSHolder VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.63 
+org.apache.ibatis.io.VFS$VFSHolder Using VFS adapter org.apache.ibatis.io.DefaultVFS74 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource Created connection 1237598030.424 
+org.apache.ibatis.datasource.pooled.PooledDataSource Returned connection 1237598030 to pool.381 
+org.apache.ibatis.datasource.pooled.PooledDataSource Checked out connection 1237598030 from pool.416 
+org.apache.ibatis.datasource.pooled.PooledDataSource Returned connection 1237598030 to pool.381 
+org.apache.ibatis.cache.decorators.LoggingCache Cache Hit Ratio [SQL_CACHE]: 0.060 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Opening JDBC Connection136 
+org.apache.ibatis.datasource.pooled.PooledDataSource Checked out connection 1237598030 from pool.416 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@49c43f4e]100 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger ==>  Preparing: SELECT count(0) FROM tbl_employee WHERE (last_name LIKE ?) 143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger ==> Parameters: %C%(String)143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger <==      Total: 1143 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@49c43f4e]122 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@49c43f4e]90 
+org.apache.ibatis.datasource.pooled.PooledDataSource Returned connection 1237598030 to pool.381 
+org.apache.ibatis.logging.LogFactory Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.105 
+org.apache.ibatis.io.VFS Class not found: org.jboss.vfs.VFS108 
+org.apache.ibatis.io.JBoss6VFS JBoss 6 VFS API is not available in this environment.142 
+org.apache.ibatis.io.VFS Class not found: org.jboss.vfs.VirtualFile108 
+org.apache.ibatis.io.VFS$VFSHolder VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.63 
+org.apache.ibatis.io.VFS$VFSHolder Using VFS adapter org.apache.ibatis.io.DefaultVFS74 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource Created connection 1237598030.424 
+org.apache.ibatis.datasource.pooled.PooledDataSource Returned connection 1237598030 to pool.381 
+org.apache.ibatis.datasource.pooled.PooledDataSource Checked out connection 1237598030 from pool.416 
+org.apache.ibatis.datasource.pooled.PooledDataSource Returned connection 1237598030 to pool.381 
+org.apache.ibatis.cache.decorators.LoggingCache Cache Hit Ratio [SQL_CACHE]: 0.060 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Opening JDBC Connection136 
+org.apache.ibatis.datasource.pooled.PooledDataSource Checked out connection 1237598030 from pool.416 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@49c43f4e]100 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger ==>  Preparing: SELECT count(0) FROM tbl_employee WHERE (last_name LIKE ?) 143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger ==> Parameters: %C%(String)143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger <==      Total: 1143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger ==>  Preparing: select id, last_name, gender, email, dept_id from tbl_employee WHERE ( last_name like ? ) LIMIT ?, ? 143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger ==> Parameters: %C%(String), 3(Integer), 3(Integer)143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger <==      Total: 2143 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@49c43f4e]122 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@49c43f4e]90 
+org.apache.ibatis.datasource.pooled.PooledDataSource Returned connection 1237598030 to pool.381 
+org.apache.ibatis.logging.LogFactory Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.105 
+org.apache.ibatis.io.VFS Class not found: org.jboss.vfs.VFS108 
+org.apache.ibatis.io.JBoss6VFS JBoss 6 VFS API is not available in this environment.142 
+org.apache.ibatis.io.VFS Class not found: org.jboss.vfs.VirtualFile108 
+org.apache.ibatis.io.VFS$VFSHolder VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.63 
+org.apache.ibatis.io.VFS$VFSHolder Using VFS adapter org.apache.ibatis.io.DefaultVFS74 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource Created connection 1237598030.424 
+org.apache.ibatis.datasource.pooled.PooledDataSource Returned connection 1237598030 to pool.381 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Opening JDBC Connection136 
+org.apache.ibatis.datasource.pooled.PooledDataSource Checked out connection 1237598030 from pool.416 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@49c43f4e]100 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger ==>  Preparing: select id, last_name, gender, email, dept_id from tbl_employee WHERE ( last_name like ? ) 143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger ==> Parameters: %C%(String)143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger <==      Total: 5143 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@49c43f4e]122 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@49c43f4e]90 
+org.apache.ibatis.datasource.pooled.PooledDataSource Returned connection 1237598030 to pool.381 
+org.apache.ibatis.logging.LogFactory Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.105 
+org.apache.ibatis.io.VFS Class not found: org.jboss.vfs.VFS108 
+org.apache.ibatis.io.JBoss6VFS JBoss 6 VFS API is not available in this environment.142 
+org.apache.ibatis.io.VFS Class not found: org.jboss.vfs.VirtualFile108 
+org.apache.ibatis.io.VFS$VFSHolder VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.63 
+org.apache.ibatis.io.VFS$VFSHolder Using VFS adapter org.apache.ibatis.io.DefaultVFS74 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource Created connection 1237598030.424 
+org.apache.ibatis.datasource.pooled.PooledDataSource Returned connection 1237598030 to pool.381 
+org.apache.ibatis.datasource.pooled.PooledDataSource Checked out connection 1237598030 from pool.416 
+org.apache.ibatis.datasource.pooled.PooledDataSource Returned connection 1237598030 to pool.381 
+org.apache.ibatis.cache.decorators.LoggingCache Cache Hit Ratio [SQL_CACHE]: 0.060 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Opening JDBC Connection136 
+org.apache.ibatis.datasource.pooled.PooledDataSource Checked out connection 1237598030 from pool.416 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@49c43f4e]100 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger ==>  Preparing: SELECT count(0) FROM tbl_employee WHERE (last_name LIKE ?) 143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger ==> Parameters: %C%(String)143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger <==      Total: 1143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger ==>  Preparing: select id, last_name, gender, email, dept_id from tbl_employee WHERE ( last_name like ? ) LIMIT ?, ? 143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger ==> Parameters: %C%(String), 3(Integer), 3(Integer)143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger <==      Total: 2143 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@49c43f4e]122 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@49c43f4e]90 
+org.apache.ibatis.datasource.pooled.PooledDataSource Returned connection 1237598030 to pool.381 
+org.apache.ibatis.logging.LogFactory Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.105 
+org.apache.ibatis.io.VFS Class not found: org.jboss.vfs.VFS108 
+org.apache.ibatis.io.JBoss6VFS JBoss 6 VFS API is not available in this environment.142 
+org.apache.ibatis.io.VFS Class not found: org.jboss.vfs.VirtualFile108 
+org.apache.ibatis.io.VFS$VFSHolder VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.63 
+org.apache.ibatis.io.VFS$VFSHolder Using VFS adapter org.apache.ibatis.io.DefaultVFS74 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource Created connection 1237598030.424 
+org.apache.ibatis.datasource.pooled.PooledDataSource Returned connection 1237598030 to pool.381 
+org.apache.ibatis.datasource.pooled.PooledDataSource Checked out connection 1237598030 from pool.416 
+org.apache.ibatis.datasource.pooled.PooledDataSource Returned connection 1237598030 to pool.381 
+org.apache.ibatis.cache.decorators.LoggingCache Cache Hit Ratio [SQL_CACHE]: 0.060 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Opening JDBC Connection136 
+org.apache.ibatis.datasource.pooled.PooledDataSource Checked out connection 1237598030 from pool.416 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@49c43f4e]100 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger ==>  Preparing: SELECT count(0) FROM tbl_employee 143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger ==> Parameters: 143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger <==      Total: 1143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger ==>  Preparing: select id, last_name, gender, email, dept_id from tbl_employee LIMIT ?, ? 143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger ==> Parameters: 5(Integer), 5(Integer)143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger <==      Total: 5143 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@49c43f4e]122 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@49c43f4e]90 
+org.apache.ibatis.datasource.pooled.PooledDataSource Returned connection 1237598030 to pool.381 
+org.apache.ibatis.logging.LogFactory Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.105 
+org.apache.ibatis.io.VFS Class not found: org.jboss.vfs.VFS108 
+org.apache.ibatis.io.JBoss6VFS JBoss 6 VFS API is not available in this environment.142 
+org.apache.ibatis.io.VFS Class not found: org.jboss.vfs.VirtualFile108 
+org.apache.ibatis.io.VFS$VFSHolder VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.63 
+org.apache.ibatis.io.VFS$VFSHolder Using VFS adapter org.apache.ibatis.io.DefaultVFS74 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource PooledDataSource forcefully closed/removed all connections.353 
+org.apache.ibatis.datasource.pooled.PooledDataSource Created connection 1237598030.424 
+org.apache.ibatis.datasource.pooled.PooledDataSource Returned connection 1237598030 to pool.381 
+org.apache.ibatis.datasource.pooled.PooledDataSource Checked out connection 1237598030 from pool.416 
+org.apache.ibatis.datasource.pooled.PooledDataSource Returned connection 1237598030 to pool.381 
+org.apache.ibatis.cache.decorators.LoggingCache Cache Hit Ratio [SQL_CACHE]: 0.060 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Opening JDBC Connection136 
+org.apache.ibatis.datasource.pooled.PooledDataSource Checked out connection 1237598030 from pool.416 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@49c43f4e]100 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger ==>  Preparing: SELECT count(0) FROM tbl_employee 143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger ==> Parameters: 143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger <==      Total: 1143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger ==>  Preparing: select id, last_name, gender, email, dept_id from tbl_employee LIMIT ?, ? 143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger ==> Parameters: 5(Integer), 5(Integer)143 
+org.apache.ibatis.logging.jdbc.BaseJdbcLogger <==      Total: 5143 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@49c43f4e]122 
+org.apache.ibatis.transaction.jdbc.JdbcTransaction Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@49c43f4e]90 
+org.apache.ibatis.datasource.pooled.PooledDataSource Returned connection 1237598030 to pool.381 

@@ -36,4 +36,13 @@ public class EmployeeController {
         Employee employee = employeeService.getById(id);
         return employee.toString();
     }
+    @RequestMapping("/batch")
+    @ResponseBody
+    public String batch(){
+        Map map1 = employeeService.batchInsert();
+        if((boolean)map1.get("status")){
+            return "success,time = "+map1.get("time");
+        }
+        return "Add data failed.";
+    }
 }

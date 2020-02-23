@@ -2,9 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f9520fa-1ad6-4355-9ef2-ab13b70529ff" name="Default Changelist" comment="update MyBatis-DynamicSQL module about data cache.">
+      <change afterPath="$PROJECT_DIR$/../mybatis-batchExecute/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis-batchExecute/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis-batchExecute/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis-batchExecute/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis-batchExecute/MySQL处理枚举类型.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis-batchExecute/src/main/java/com/zy/mybatis/TypeHandler/MyEnumEmpEnumTypeHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis-batchExecute/src/test/java/com/zy/mybatis/EnumTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis-pagehelper/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis-pagehelper/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis-batchExecute/src/main/java/com/zy/mybatis/bean/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis-batchExecute/src/main/java/com/zy/mybatis/bean/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis-batchExecute/src/main/java/com/zy/mybatis/dao/EmployeeMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis-batchExecute/src/main/java/com/zy/mybatis/dao/EmployeeMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis-batchExecute/src/main/resources/config/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis-batchExecute/src/main/resources/config/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis-batchExecute/src/main/resources/mapper/EmployeeMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis-batchExecute/src/main/resources/mapper/EmployeeMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis-batchExecute/src/test/java/com/zy/mybatis/BatchExecuteTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis-batchExecute/src/test/java/com/zy/mybatis/BatchExecuteTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../mybatis-spring/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis-spring/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mybatis-spring/target/classes/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis-spring/target/classes/spring-mvc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis-spring/target/classes/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis-spring/target/classes/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis-spring/target/classes/com/zy/mybatis/controller/EmployeeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis-spring/target/classes/com/zy/mybatis/controller/EmployeeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis-spring/target/classes/com/zy/mybatis/mapper/EmployeeMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis-spring/target/classes/com/zy/mybatis/mapper/EmployeeMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis-spring/target/classes/com/zy/mybatis/service/EmployeeService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis-spring/target/classes/com/zy/mybatis/service/EmployeeService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis-spring/target/classes/mybatis/mapper/employeeMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis-spring/target/classes/mybatis/mapper/employeeMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis-spring/target/classes/mybatis/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis-spring/target/classes/mybatis/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis-spring/target/mybatis-spring/WEB-INF/classes/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis-spring/target/mybatis-spring/WEB-INF/classes/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis-spring/target/mybatis-spring/WEB-INF/classes/com/zy/mybatis/controller/EmployeeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis-spring/target/mybatis-spring/WEB-INF/classes/com/zy/mybatis/controller/EmployeeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis-spring/target/mybatis-spring/WEB-INF/classes/com/zy/mybatis/mapper/EmployeeMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis-spring/target/mybatis-spring/WEB-INF/classes/com/zy/mybatis/mapper/EmployeeMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis-spring/target/mybatis-spring/WEB-INF/classes/com/zy/mybatis/service/EmployeeService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis-spring/target/mybatis-spring/WEB-INF/classes/com/zy/mybatis/service/EmployeeService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis-spring/target/mybatis-spring/WEB-INF/classes/mybatis/mapper/employeeMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis-spring/target/mybatis-spring/WEB-INF/classes/mybatis/mapper/employeeMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis-spring/target/mybatis-spring/WEB-INF/classes/mybatis/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis-spring/target/mybatis-spring/WEB-INF/classes/mybatis/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis-spring/target/mybatis-spring/WEB-INF/classes/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis-spring/target/mybatis-spring/WEB-INF/classes/spring-mvc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis-spring/target/mybatis-spring/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis-spring/target/mybatis-spring/WEB-INF/web.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -20,15 +47,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/employeeDynamicMapper.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6061">
-              <caret line="209" column="15" selection-start-line="209" selection-start-column="15" selection-end-line="209" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/config/mybatis-config.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="522">
@@ -37,11 +55,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/zy/mybatis/pool/DruidDataSourceFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
-              <caret line="8" column="45" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
+            <state relative-caret-position="203">
+              <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/zy/mybatis/test/DynamicSQLTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="346">
+              <caret line="23" column="60" lean-forward="true" selection-start-line="23" selection-start-column="60" selection-end-line="23" selection-end-column="60" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -156,9 +186,9 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="70" />
-    <option name="width" value="1855" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-5" />
+    <option name="width" value="1930" />
     <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -170,6 +200,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -275,7 +306,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -283,7 +313,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../mybatis-spring" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
@@ -421,6 +451,7 @@
       <workItem from="1582088732044" duration="6708000" />
       <workItem from="1582099981983" duration="2067000" />
       <workItem from="1582170481219" duration="16000" />
+      <workItem from="1582429236714" duration="1827000" />
     </task>
     <task id="LOCAL-00001" summary="更新了动态SQLDemo.">
       <created>1582006583742</created>
@@ -493,12 +524,12 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33120000" />
+    <option name="totallyTimeSpent" value="34947000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21677852" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21946308" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="JRebel" order="2" side_tool="true" />
       <window_info id="Image Layers" order="3" />
@@ -586,16 +617,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/zy/mybatis/test/DynamicSQLTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8555">
-          <caret line="308" column="58" selection-start-line="308" selection-start-column="58" selection-end-line="308" selection-end-column="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zy/mybatis/mapper/EmployeeDynamicMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="348">
@@ -674,8 +695,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zy/mybatis/pool/DruidDataSourceFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="8" column="45" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
+        <state relative-caret-position="203">
+          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/zy/mybatis/test/DynamicSQLTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="23" column="60" lean-forward="true" selection-start-line="23" selection-start-column="60" selection-end-line="23" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

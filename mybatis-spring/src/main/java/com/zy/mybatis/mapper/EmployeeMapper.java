@@ -10,5 +10,5 @@ public interface EmployeeMapper {
     Employee getById(Integer id);
     List<Employee> getByGenderList(Employee employee);
     List<Employee> getAllEmployee();
-    void addEmployee(Employee employee);
+    boolean addEmployee(Employee employee);
 }

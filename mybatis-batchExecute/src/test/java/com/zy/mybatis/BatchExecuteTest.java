@@ -2,6 +2,7 @@ package com.zy.mybatis;
 
 import com.zy.mybatis.bean.Employee;
 import com.zy.mybatis.dao.EmployeeMapper;
+import com.zy.mybatis.enums.EmployeeEnum;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.ExecutorType;
 import org.apache.ibatis.session.SqlSession;
@@ -90,4 +91,5 @@ public class BatchExecuteTest {
      * 当前session开启批处理-->>>执行方式：[预编译：1次]      [设置参数1万次]       [执行1次]    [时长：5.1秒]
      * 当前session不开启批处理--->>>执行方式：[预编译1万次]  [设置参数1万次]       [执行1万次]   [时长：15.4秒]
      */
+
 }

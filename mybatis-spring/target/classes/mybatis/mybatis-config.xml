@@ -13,6 +13,8 @@
         <setting name="defaultStatementTimeout" value="25"/>
         <!--开启驼峰命名-->
         <setting name="mapUnderscoreToCamelCase" value="true"/>
+        <!--开启全局批处理-->
+<!--        <setting name="defaultExecutorType" value="BATCH"/>-->
     </settings>
 
 

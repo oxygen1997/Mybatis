@@ -1,0 +1,20 @@
+1.Mybatis默认处理枚举类型是存储枚举的name：
+        public void test(){
+                EmployeeEnum employeeEnum = EmployeeEnum.LOGOUT;
+                //枚举类型的索引,从0开始，按代码中枚举类型顺序排序
+                int ordinal = employeeEnum.ordinal();
+                //枚举类型的名字，Mybatis默认处理枚举类型，保存的是枚举名
+                String name = employeeEnum.name();
+                System.out.println("枚举的name："+name+"   枚举的索引："+ordinal);
+                String msg = employeeEnum.getMsg();
+                Integer code = employeeEnum.getCode();
+                System.out.println("code: "+code+"  msg："+msg);
+            }
+ 2.改变Mybatis处理枚举类型，使其存储枚举的索引
+        全局配置文件中：在<typeAliases>标签后加入
+                    <typeHandlers>
+                            <!--使用枚举索引存储-->
+                            <!--<typeHandler handler="org.apache.ibatis.type.EnumOrdinalTypeHandler" javaType="com.zy.mybatis.enums.EmployeeEnum"/>-->
+                            <!--使用自定义类型存储-->
+                            <typeHandler handler="com.zy.mybatis.TypeHandler.MyEnumEmpEnumTypeHandler" javaType="com.zy.mybatis.enums.EmployeeEnum"/>
+                    </typeHandlers>

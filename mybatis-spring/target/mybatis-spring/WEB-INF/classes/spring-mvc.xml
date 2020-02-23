@@ -20,10 +20,10 @@
     </bean>
 
     <!-- 静态资源 -->
-    <mvc:resources mapping="dist/css/**" location="/static/css/" />
-    <mvc:resources mapping="dist/js/**" location="/static/js/" />
-    <mvc:resources mapping="dist/img/**" location="/static/img/" />
-    <mvc:resources mapping="dist/music/**" location="/static/music/" />
+    <mvc:resources mapping="static/css/**" location="/static/css/" />
+    <mvc:resources mapping="static/js/**" location="/static/js/" />
+    <mvc:resources mapping="static/img/**" location="/static/img/" />
+    <mvc:resources mapping="static/music/**" location="/static/music/" />
     <mvc:resources mapping="plugins/**" location="/plugins/" />
     <mvc:annotation-driven></mvc:annotation-driven>
     <mvc:default-servlet-handler/>

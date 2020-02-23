@@ -38,13 +38,13 @@
     </update>
 
 <!--    插入数据， 批量插入 allowMultiQueries=true-->
-    <insert id="add" parameterType="com.zy.mybatis.bean.Employee">
-        <foreach collection="param1" item="emp" separator=";">
+    <insert id="addEmployee" parameterType="com.zy.mybatis.bean.Employee">
+<!--        <foreach collection="employee" item="emp" separator=";">-->
             insert  into
             tbl_employee(last_name,gender,email,dept_id)
             values
-            (#{emp.lastName},#{emp.gender},#{emp.email},#{emp.dept.id})
-        </foreach>
+            (#{lastName},#{gender},#{email},#{dept.id})
+<!--        </foreach>-->
     </insert>
 
 <!--    通过id查询数据-->

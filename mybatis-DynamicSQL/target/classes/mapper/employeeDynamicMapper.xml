@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.zy.mybatis.mapper.EmployeeDynamicMapper">
+<!--    在命名空间中开启二级缓存
+        eviction （收回策略）
+			 LRU （最近最少使用的） ： 移除最长时间不被使用的对象，这是默认值。
+			 FIFO （先进先出〉： 按对象进入缓存的顺序来移除它们。
+			 SOFT （软引用） ： 移除基于垃圾回收器状态和软引用规则的对象。
+			 WEAK （弱引用） ： 更积极地移除基于垃圾收集器状态和弱引用规则的对象。
+        flushInterval （刷新间隔〉可以被设置为任意的正整数， 而且它们代表一个合理
+                        的毫秒形式的时间段
+        size （引用数目） 。可以被设置为任意正整数，要记住缓存的对象数目和运行环境的可
+                        用内存资源数目。默认值是1024 。
+        readOnly （只读）。属性可以被设置为true 或false 。只读的缓存会给所有调用者
+                           true：不安全，直接返回  false：会序列化对象产生一份克隆拷贝基于使用，安全，速度慢
+                           返回缓存对象的相同实例，因此这些对象不能被修改
+-->
+    <cache  eviction="FIFO" flushInterval="60000" size="512" readOnly="true"/>
+
+    <resultMap id="EmpByConditionList" type="com.zy.mybatis.pojo.Employee">
+        <id column="id" property="id"/>
+        <result column="last_name" property="lastName"/>
+        <result column="gender" property="gender"/>
+        <result column="email" property="email"/>
+    </resultMap>
+<!--    使用where标签去SQL多余第一个and-->
+    <select id="getEmpByConditionIf" resultMap="EmpByConditionList">
+        select *
+        from tbl_employee
+        <!-- where  1=1 -->
+        <where>
+            <if test="id!=null">
+                id=#{id}
+            </if>
+            <!-- 使用转义字符代替特殊符号& -> &amp; 和 ; -> &quot;-->
+            <if test="lastName!=null &amp;&amp; lastName.trim()!=&quot;&quot;">
+                and last_name like concat('%',#{lastName},'%')
+            </if>
+            <!--动态SQL会对字符串与数字进行转换判断-->
+            <if test="gender==0 or gender==1">
+                and gender=#{gender}
+            </if>
+            <if test="email!=null&amp;&amp;email.trim()!=&quot;&quot;">
+                and email=#{email};
+            </if>
+        </where>
+    </select>
+
+<!--    使用trim标签去掉[where set]多余and or标签 and后置时情况 -->
+    <select id="getEmpByConditionChoose" resultMap="EmpByConditionList">
+        select *
+        from tbl_employee
+        <!--
+             when :条件
+             otherWise：其他选择 类似于switchcase中的default选项
+        -->
+        <where>
+            <choose>
+                <when test="id!=null">
+                    id=#{id}
+                </when>
+                <!-- 使用转义字符代替特殊符号& -> &amp; 和 ; -> &quot;-->
+                <when test="lastName!=null &amp;&amp; lastName.trim()!=&quot;&quot;">
+                    last_name like concat('%',#{lastName},'%')
+                </when>
+                <when test="email!=null&amp;&amp;email.trim()!=&quot;&quot;">
+                    email=#{email};
+                </when>
+                <otherwise>
+                    gender=0
+                </otherwise>
+            </choose>
+        </where>
+    </select>
+
+    <!--    使用trim去除多余字符串针对（where set） -->
+    <select id="getEmpByConditionTrim" resultMap="EmpByConditionList">
+        select *
+        from tbl_employee
+        <!--
+             prefix="" 前缀  在所有条件之前加上的SQL前缀关键字
+             prefixOverrides=""前缀覆盖：将字符串前面多余的and或者or去掉
+             suffix="" 后缀  在所有条件之前加上的SQL前缀关键字
+             suffixOverrides=""后缀覆盖：将字符串后面多余的and或者or去掉
+        -->
+        <trim prefix="where" suffixOverrides="and" >
+            <if test="id!=null">
+                id=#{id} and
+            </if>
+            <!-- 使用转义字符代替特殊符号& -> &amp; 和 ; -> &quot;-->
+            <if test="lastName!=null &amp;&amp; lastName.trim()!=&quot;&quot;">
+                last_name like concat('%',#{lastName},'%') and
+            </if>
+            <!--动态SQL会对字符串与数字进行转换判断-->
+            <if test="gender==0 or gender==1">
+                gender=#{gender} and
+            </if>
+            <if test="email!=null&amp;&amp;email.trim()!=&quot;&quot;">
+                email=#{email};
+            </if>
+        </trim>
+    </select>
+<!--使用set标签更新数据-->
+    <update id="updateEmpByConditionSet">
+        update tbl_employee
+        <set>
+            <if test="id!=null">
+                id=#{id},
+            </if>
+            <!-- 使用转义字符代替特殊符号& -> &amp; 和 ; -> &quot;-->
+            <if test="lastName!=null">
+                last_name=#{lastName},
+            </if>
+            <!--动态SQL会对字符串与数字进行转换判断-->
+            <if test="gender!=null">
+                gender=#{gender},
+            </if>
+            <if test="email!=null">
+                email=#{email}
+            </if>
+        </set>
+         <where>
+             id=#{id}
+         </where>
+
+    </update>
+
+<!--    查找包含集合内元素的对象-->
+    <select id="getEmpByConditionForeach" resultMap="EmpByConditionList">
+        select *
+        from tbl_employee
+        <!--
+            collection:传入的集合参数，
+            item：集合中的每个对象
+            separator，每个对象之间的分隔符
+            index：索引，list集合中index是索引，map集合中index是key，item为value
+            open: 遍历出的所有结果开头拼接一个字符串
+            close: 遍历出的所有结果结尾拼接一个字符串
+            #{变量名}
+        -->
+        <foreach collection="list" item="user_id" separator="," index="i" open="where id in ("  close=")">
+            #{user_id}
+        </foreach>
+<!--        where id
+            in
+            <foreach collection="list"  item="id" separator=","  open="("  close=")">
+            #{id}
+            </foreach>-->
+    </select>
+<!--
+    批量插入数据记录
+    MySQL支持value(),(),()语法进行批量插入多条数据
+    出现以下错误，参数未使用@Param注解绑定，导致找不到参数(可以使用param1代表第一个参数，或者绑定参数名)
+    Cause: org.apache.ibatis.binding.BindingException: Parameter 'employeeList' not found. Available parameters are [collection, list]
+-->
+    <!--<insert id="addEmpByConditionForeach" parameterType="employee">
+        insert  into
+        tbl_employee(last_name,gender,email,dept_id)
+        values
+        <foreach collection="empList" item="emp" separator=",">
+            (#{emp.lastName},#{emp.gender},#{emp.email},#{emp.dept.id})
+        </foreach>
+    </insert>-->
+<!--    插入多条数据记录，批量执行SQL
+       需要在配置文件中加参数 allowMultiQueries=true
+-->
+    <insert id="addEmpByConditionForeach" parameterType="employee">
+        <foreach collection="param1" item="emp" separator=";">
+            insert  into
+            tbl_employee(last_name,gender,email,dept_id)
+            values
+            (#{emp.lastName},#{emp.gender},#{emp.email},#{emp.dept.id})
+        </foreach>
+    </insert>
+
+<!--    两个内置参数
+        除方法传递的参数可以用作判断和取值，Mybatis内置两个参数也可用作判断和取值_parameter，_databaseId
+        _parameter：代表整个参数
+            单个参数：代表这个参数
+            多个参数：参数会被封装成map；_parameter代表这个map
+        _databaseId：在Mybatis全局配置文件中配置了databaseProvider标签，_databaseId代表配置数据库的别名，如当前MySQL别名为mysql
+-->
+    <select id="getEmpByInnerParameter" resultType="employee" databaseId="mysql">
+<!--        <if test="_databaseId==mysql">-->
+            select * from tbl_employee
+            <if test="_parameter!=null">
+                where last_name=#{lastName}
+            </if>
+<!--        </if>-->
+<!--        <if test="_databaseId==oracle">
+            select * from tbl_employees
+            <if test="_parameter!=null">
+                where last_name=#{lastName}
+            </if>
+        </if>-->
+    </select>
+
+<!--    bind标签的使用 自定义变量，在sql中调用-->
+    <select id="getEmpByIdBind" resultType="employee">
+    <bind name="_lastName" value="'%'+lastName+'%'"/>
+        select * from tbl_employee
+        where
+        last_name like #{_lastName}
+        ;
+    </select>
+
+<!--    可重用的标签抽取 , <sql>和<include>标签-->
+    <sql id="selectByIdColumn">
+        last_name,gender,email
+    </sql>
+    <select id="getById" resultType="employee">
+        select
+        <include refid="selectByIdColumn">
+        <!--自定义属性在SQL中使用-->
+<!--        <property name="testColumn" value="abc"/>-->
+        </include>
+        from tbl_employee
+        where
+        id=#{id}
+    </select>
+</mapper>

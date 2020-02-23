@@ -1,5 +1,7 @@
 package com.zy.mybatis.bean;
 
+import com.zy.mybatis.enums.EmployeeEnum;
+
 public class Employee {
     private Integer id;
 
@@ -10,6 +12,16 @@ public class Employee {
     private String email;
 
     private Integer deptId;
+
+    private EmployeeEnum employeeEnum;
+
+    public EmployeeEnum getEmployeeEnum() {
+        return employeeEnum;
+    }
+
+    public void setEmployeeEnum(EmployeeEnum employeeEnum) {
+        this.employeeEnum = employeeEnum;
+    }
 
     public Integer getId() {
         return id;
@@ -54,6 +66,14 @@ public class Employee {
     public Employee() {
     }
 
+    public Employee(String lastName, Integer gender, String email, Integer deptId, EmployeeEnum employeeEnum) {
+        this.lastName = lastName;
+        this.gender = gender;
+        this.email = email;
+        this.deptId = deptId;
+        this.employeeEnum = employeeEnum;
+    }
+
     public Employee(String lastName, Integer gender, String email, Integer deptId) {
         this.lastName = lastName;
         this.gender = gender;
@@ -68,6 +88,8 @@ public class Employee {
                 ", lastName='" + lastName + '\'' +
                 ", gender=" + gender +
                 ", email='" + email + '\'' +
+                ", deptId=" + deptId +
+                ", employeeEnum=" + employeeEnum +
                 '}';
     }
 }
