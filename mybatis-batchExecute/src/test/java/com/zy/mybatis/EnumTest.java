@@ -44,6 +44,16 @@ public class EnumTest {
         }
     }
 
+    @Test
+    public void test2(){
+        Byte b = 'A';
+        char c = '里';
+        System.out.println("1="+b);
+        System.out.println("2="+(byte)b);
+        System.out.println("c="+c);
+//        System.out.println("3="+(char)b);
+    }
+
     /**
      * 处理枚举类型存储枚举索引
      * 全局配置文件中加入typeHandler
