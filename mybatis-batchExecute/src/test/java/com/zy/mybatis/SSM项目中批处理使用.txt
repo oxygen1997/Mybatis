@@ -1,0 +1,18 @@
+1.applicationContext.xml文件中，配置一个SqlSession，使用构造器初始化参数，一个参数为SqlSessionFactoryBean，另一个参数为批处理的静态常量类型
+        <!--创建出SqlSessionFactory对象  -->
+        <bean id="sqlSessionFactoryBean" class="org.mybatis.spring.SqlSessionFactoryBean">
+            <property name="dataSource" ref="dataSource"></property>
+            <!-- configLocation指定全局配置文件的位置 -->
+            <property name="configLocation" value="classpath:mybatis/mybatis-config.xml"></property>
+            <!--mapperLocations: 指定mapper文件的位置 mybatis全局配置文件中的注册mapper效果一致-->
+            <property name="mapperLocations" value="classpath:mybatis/mapper/*.xml"></property>
+        </bean>
+
+
+        <!--配置一个可以进行批量执行的sqlSession  -->
+        <bean id="sqlSession" class="org.mybatis.spring.SqlSessionTemplate">
+            <constructor-arg name="sqlSessionFactory" ref="sqlSessionFactoryBean"></constructor-arg>
+            <constructor-arg name="executorType" value="BATCH"></constructor-arg>
+        </bean>
+
+2.在需要使用批处理的service中自动注入SqlSession，使用sqlSession的getMapper获取mapper即可使用
