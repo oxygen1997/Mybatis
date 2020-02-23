@@ -6,7 +6,8 @@
     <!--    resources 从类路径下引入配置文件
         url 从网络或者磁盘引入资源配置文件
 -->
-    <properties resource="dbconfig.properties"></properties>
+    <properties resource="dbConfig.properties"></properties>
+
     <settings>
         <!--        开启二级缓存 value默认为true
                     MyBatis 的二级缓存是和命名空间绑定的，即二级缓存需要配置在Mapper.xml 映射文件中，
@@ -24,13 +25,15 @@
         <setting name="defaultStatementTimeout" value="25"/>
         <!--开启驼峰命名-->
         <setting name="mapUnderscoreToCamelCase" value="true"/>
+        <!--开启全局批量执行SQL语句-->
+<!--        <setting name="defaultExecutorType" value="BATCH"/>-->
     </settings>
 
     <typeAliases>
         <!--为单独的类起别名，在映射文件中可以直接使用类名作为type，不区分大小写-->
         <!--<typeAlias type="com.zy.Employee"></typeAlias>-->
         <!--批量起别名，为包下的所有后代类都以类名起别名，不区分大小写，默认小写。如果实体类有子包冲突，那么可以使用注解@Alias("别名")-->
-        <package name="com.zy.mybatis.bean"/>
+        <package name="com.mybatis.bean"/>
     </typeAliases>
 
 
@@ -64,6 +67,6 @@
     <mappers>
         <mapper resource="mapper/EmployeeMapper.xml" />
         <!-- 批量注册： -->
-<!--         <package  name="com.zy.mybatis.dao"/>-->
+<!--         <package  name="com.mybatis.dao"/>-->
     </mappers>
 </configuration>

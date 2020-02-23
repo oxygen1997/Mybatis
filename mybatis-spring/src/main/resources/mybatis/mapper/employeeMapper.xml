@@ -38,7 +38,7 @@
     </update>
 
 <!--    插入数据， 批量插入 allowMultiQueries=true-->
-    <insert id="add" parameterType="com.zy.mybatis.bean.Employee">
+    <insert id="addEmployee" parameterType="com.zy.mybatis.bean.Employee">
         <foreach collection="param1" item="emp" separator=";">
             insert  into
             tbl_employee(last_name,gender,email,dept_id)
