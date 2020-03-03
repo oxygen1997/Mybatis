@@ -1,3 +1,3 @@
 # Mybatis-Demo
-Mybatis学习demo， 从入门到放弃。
+Mybatis demo.
 Stay foolish，stay hungry.
