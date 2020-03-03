@@ -5,7 +5,7 @@
 
 <mapper namespace="com.zy.mybatis.mapper.EmployeeDynamicMapper">
 <!--    在命名空间中开启二级缓存
-        eviction （收回策略）
+		eviction （收回策略）
 			 LRU （最近最少使用的） ： 移除最长时间不被使用的对象，这是默认值。
 			 FIFO （先进先出〉： 按对象进入缓存的顺序来移除它们。
 			 SOFT （软引用） ： 移除基于垃圾回收器状态和软引用规则的对象。
@@ -49,7 +49,7 @@
         </where>
     </select>
 
-<!--    使用trim标签去掉[where set]多余and or标签 and后置时情况 -->
+<!--    使用when otherwise -->
     <select id="getEmpByConditionChoose" resultMap="EmpByConditionList">
         select *
         from tbl_employee
